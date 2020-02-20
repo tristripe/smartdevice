@@ -23,10 +23,34 @@
      padding-bottom: 18px;
    }
 
+   @media (min-width: $tablet-width) {
+     &--lead {
+       width: 380px;
+     }
+   }
+
    @media (min-width: $desktop-width) {
      display: block;
      padding-top: 14px;
      padding-bottom: 11px;
      width: 180px;
+
+     &--lead {
+       width: 407px;
+     }
    }
+}
+
+.button-position {
+  @media (min-width: $tablet-width) {
+    &--lead {
+      margin-left: 115px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--lead {
+      margin-left: 50px;
+    }
+  }
 }

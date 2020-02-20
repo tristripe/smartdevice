@@ -1,11 +1,32 @@
 .lead {
   background-color: $color-teal;
-  padding-top: 25px;
+  padding-top: 170px;
   padding-bottom: 70px;
+  background-image: url("../img/plate-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 170px;
+    background-image: url("../img/plate-tablet.png");
+    background-position: right 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 180px;
+    padding-bottom: 270px;
+    background-image: url("../img/plate-desktop.png");
+    background-position: 85% 165px;
+  }
 }
 
 .lead__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktopwide-width) {
+    width: 1400px;
+  }
 }
 
 .lead__title {
@@ -15,7 +36,27 @@
   color: $color-white;
   letter-spacing: 0.07em;
   font-size: $fontsize-giant;
-  margin-top: -28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fontsize-gigantic;
+    width: 400px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 800px;
+  }
+}
+
+.lead__title-position {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    margin-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+    margin-left: 0;
+  }
 }
 
 .lead__subtitle {
@@ -36,8 +77,36 @@
     top: 16px;
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: $fontsize-higher;
+    width: 400px;
+  }
 }
 
 .lead__subtitle-position {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    margin-left: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+    margin-left: 0;
+  }
+}
+
+.lead__anchor {
+  font-family: $ptmono;
+  font-size: $fontsize-smaller;
+  color: $color-white;
+  text-decoration: none;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    opacity: 0.5;
+  }
 }
