@@ -1,0 +1,19 @@
+.button {
+  font-family: $roboto;
+  text-transform: uppercase;
+  font-size: $fontsize-smaller;
+  font-weight: $fontweight-bold;
+  letter-spacing: 0.05em;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+   &--callback {
+     color: $color-white;
+     background-color: transparent;
+     display: none;
+   }
+
+   @media (min-width: $desktop-width) {
+     display: block;
+     padding: 13px 26px;
+   }
+}

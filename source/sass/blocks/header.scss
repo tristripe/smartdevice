@@ -1,0 +1,11 @@
+.header {
+  background-color: $color-teal;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include wrapper;
+  padding-top: 10px;
+}
