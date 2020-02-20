@@ -1,20 +1,31 @@
 .button {
   font-family: $roboto;
   text-transform: uppercase;
-  font-size: $fontsize-smaller;
-  font-weight: $fontweight-bold;
   letter-spacing: 0.05em;
-  border: 1px solid $color-white;
   border-radius: 5px;
    &--callback {
+     font-size: $fontsize-smaller;
+     font-weight: $fontweight-bold;
+     border: 1px solid $color-white;
      color: $color-white;
      background-color: transparent;
      display: none;
    }
 
+   &--lead {
+     background-color: $color-skyblue;
+     font-size: $fontsize-standart;
+     font-weight: $fontweight-bold;
+     color: $color-white;
+     border: none;
+     width: 100%;
+     padding-top: 20px;
+     padding-bottom: 18px;
+   }
+
    @media (min-width: $desktop-width) {
      display: block;
-     padding-top: 15px;
+     padding-top: 14px;
      padding-bottom: 11px;
      width: 180px;
    }
