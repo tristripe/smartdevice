@@ -14,7 +14,9 @@
   @include wrapper;
 
   @media (min-width: $desktopwide-width) {
-    width: 1400px;
+    width: 1170px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -26,7 +28,7 @@
   justify-content: space-between;
 
   @media (min-width: $desktopwide-width) {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -44,7 +46,7 @@
   }
 
   @media (min-width: $desktopwide-width) {
-    flex-basis: 600px;
+    flex-basis: 570px;
   }
 }
 
@@ -54,10 +56,6 @@
 
   @media (max-width: $desktop-width) {
     margin-bottom: 30px;
-  }
-
-  @media (min-width: $desktopwide-width) {
-    margin-right: 30px;
   }
 }
 

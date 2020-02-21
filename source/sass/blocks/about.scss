@@ -1,12 +1,8 @@
 .about {
-  padding-bottom: 110px;
-  background-image: url("../img/year-tablet.png");
-  background-repeat: no-repeat;
-  background-position: left 0;
+
 
   @media (max-width: $desktop-width) {
     padding-bottom: 83px;
-    background-image: none;
   }
 
   @media (max-width: $tablet-width) {
@@ -16,7 +12,24 @@
 
 .about__wrapper {
   @include wrapper;
+  padding-bottom: 110px;
   padding-left: 210px;
+
+  background-image: url("../img/year-tablet.png");
+  background-repeat: no-repeat;
+  background-position: left 0;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 210px;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktopwide-width) {
+    padding-left: 210px;
+  }
 }
 
 .about__title {
