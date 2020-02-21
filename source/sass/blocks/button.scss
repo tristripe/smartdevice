@@ -23,6 +23,13 @@
      padding-bottom: 18px;
    }
 
+   &--about {
+     width: 180px;
+     background-color: $color-white;
+     border: 1px solid $color-skyblue;
+     color: $color-skyblue;
+   }
+
    @media (min-width: $tablet-width) {
      &--lead {
        width: 380px;
@@ -32,7 +39,7 @@
    @media (min-width: $desktop-width) {
      display: block;
      padding-top: 14px;
-     padding-bottom: 11px;
+     padding-bottom: 12px;
      width: 180px;
 
      &--lead {

@@ -1,0 +1,48 @@
+.about {
+  padding-bottom: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 83px;
+    background-image: url("../img/year-tablet.png");
+    background-repeat: no-repeat;
+    background-position: left 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 110px;
+  }
+}
+
+.about__wrapper {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 210px;
+  }
+}
+
+.about__title {
+  font-family: $roboto;
+  font-weight: $fontweight-normal;
+  font-size: $fontsize-large;
+  color: $color-dimgray;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fontsize-larger;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $fontsize-largest;
+  }
+}
+
+.about__text {
+  font-family: $ptmono;
+  font-size: $fontsize-standart;
+  color: $color-dimgray;
+  line-height: 22px;
+}
+
+.about__text-position {
+  margin-bottom: 35px;
+}
