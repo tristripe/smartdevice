@@ -3,22 +3,25 @@
   font-weight: $fontweight-bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-top: 14px;
+  padding-bottom: 12px;
   border-radius: 5px;
+
    &--callback {
+     width: 180px;
      font-size: $fontsize-smaller;
      font-weight: $fontweight-bold;
      border: 1px solid $color-white;
      color: $color-white;
      background-color: transparent;
-     display: none;
    }
 
    &--lead {
+     width: 407px;
      background-color: $color-skyblue;
      font-size: $fontsize-standart;
      color: $color-white;
      border: none;
-     width: 100%;
      padding-top: 20px;
      padding-bottom: 18px;
    }
@@ -30,49 +33,56 @@
      color: $color-skyblue;
    }
 
-   @media (min-width: $tablet-width) {
+   @media (max-width: $desktop-width) {
+     &--callback {
+       display: none;
+     }
+
      &--lead {
-       width: 380px;
+      width: 380px;
      }
    }
 
-   @media (min-width: $desktop-width) {
-     display: block;
-     padding-top: 14px;
-     padding-bottom: 12px;
-     width: 180px;
-
+   @media (max-width: $tablet-width) {
      &--lead {
-       width: 407px;
+      width: 100%;
      }
    }
 }
 
 .button-position {
-  @media (min-width: $tablet-width) {
+  &--lead {
+    margin-left: 50px;
+  }
+
+  @media (max-width: $desktop-width) {
     &--lead {
       margin-left: 115px;
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     &--lead {
-      margin-left: 50px;
+      margin-left: 0;
     }
   }
 }
 
 .button__text {
   &--tablet {
+    display: inline-block;
+  }
+
+  &--mobile {
     display: none;
   }
 
-  @media (min-width: $tablet-width) {
-    &--mobile {
+  @media (max-width: $tablet-width) {
+    &--tablet {
       display: none;
     }
 
-    &--tablet {
+    &--mobile {
       display: inline-block;
     }
   }

@@ -1,23 +1,23 @@
 .lead {
   background-color: $color-teal;
-  padding-top: 170px;
-  padding-bottom: 70px;
-  background-image: url("../img/plate-mobile.png");
+  padding-top: 180px;
+  padding-bottom: 270px;
+  background-image: url("../img/plate-desktop.png");
+  background-position: 85% 165px;
   background-repeat: no-repeat;
-  background-position: right 0;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-top: 60px;
     padding-bottom: 170px;
     background-image: url("../img/plate-tablet.png");
     background-position: right 40px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 180px;
-    padding-bottom: 270px;
-    background-image: url("../img/plate-desktop.png");
-    background-position: 85% 165px;
+  @media (max-width: $tablet-width) {
+    padding-top: 170px;
+    padding-bottom: 70px;
+    background-image: url("../img/plate-mobile.png");
+    background-position: right 0;
   }
 }
 
@@ -35,37 +35,35 @@
   text-transform: uppercase;
   color: $color-white;
   letter-spacing: 0.07em;
-  font-size: $fontsize-giant;
+  font-size: $fontsize-gigantic;
+  width: 800px;
 
-  @media (min-width: $tablet-width) {
-    font-size: $fontsize-gigantic;
+  @media (max-width: $desktop-width) {
+    font-size: $fontsize-giant;
     width: 400px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 800px;
-  }
 }
 
 .lead__title-position {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-    margin-left: 64px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin-bottom: 35px;
     margin-left: 0;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 20px;
+    margin-left: 64px;
   }
 }
 
 .lead__subtitle {
   position: relative;
   font-family: $ptmono;
-  font-size: $fontsize-standart;
+  font-size: $fontsize-higher;
+
   color: $color-white;
   line-height: 1.7em;
   padding-left: 48px;
+  width: 400px;
 
   &:before {
     display: block;
@@ -78,23 +76,22 @@
     left: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: $fontsize-higher;
-    width: 400px;
+  @media (max-width: $desktop-width) {
+    font-size: $fontsize-standart;
   }
 }
 
 .lead__subtitle-position {
-  margin-bottom: 32px;
+    margin-bottom: 42px;
+    margin-left: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 52px;
     margin-left: 66px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 42px;
-    margin-left: 0;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -103,10 +100,11 @@
   font-size: $fontsize-smaller;
   color: $color-white;
   text-decoration: none;
-  display: none;
+  display: block;
+  opacity: 0.5;
 
-  @media (min-width: $desktop-width) {
-    display: block;
-    opacity: 0.5;
+
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }

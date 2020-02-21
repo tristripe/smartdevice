@@ -5,35 +5,38 @@
 }
 
 .service-position {
-  @media (min-width: $desktop-width) {
     margin-right: 40px;
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
 .service__link {
-  width: 26px;
+  width: 220px;
+  padding-left: 41px;
+  font-size: $fontsize-standart;
   height: 26px;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: $color-white;
   font-family: $ptmono;
-  font-size: 0;
   background-repeat: no-repeat;
   background-position: center center;
   &--email {
     background-image: url('../img/envelope.png');
     margin-right: 23px;
+    background-position: left center;
   }
 
   &--phone {
     background-image: url('../img/phone-call.png');
+    background-position: left center;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 220px;
-    padding-left: 41px;
-    font-size: $fontsize-standart;
-    background-position: left center;
+  @media (max-width: $desktop-width) {
+    width: 26px;
+    padding-left: 0;
+    font-size: 0;
   }
 }

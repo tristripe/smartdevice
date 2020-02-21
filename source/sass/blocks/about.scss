@@ -1,38 +1,37 @@
 .about {
-  padding-bottom: 65px;
+  padding-bottom: 110px;
+  background-image: url("../img/year-tablet.png");
+  background-repeat: no-repeat;
+  background-position: left 0;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-bottom: 83px;
-    background-image: url("../img/year-tablet.png");
-    background-repeat: no-repeat;
-    background-position: left 0;
+    background-image: none;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 110px;
+  @media (max-width: $tablet-width) {
+    padding-bottom: 65px;
   }
 }
 
 .about__wrapper {
   @include wrapper;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 210px;
-  }
+  padding-left: 210px;
 }
 
 .about__title {
   font-family: $roboto;
   font-weight: $fontweight-normal;
-  font-size: $fontsize-large;
+  font-size: $fontsize-largest;
+
   color: $color-dimgray;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: $fontsize-larger;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: $fontsize-largest;
+  @media (max-width: $tablet-width) {
+    font-size: $fontsize-large;
   }
 }
 

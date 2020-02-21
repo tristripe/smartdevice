@@ -1,12 +1,12 @@
 .advantage {
-  padding-top: 20px;
+  padding-top: 88px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-top: 28px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 88px;
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
   }
 }
 
@@ -21,12 +21,9 @@
 .advantage__list {
   list-style: none;
   padding-left: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: $desktopwide-width) {
     justify-content: flex-start;
@@ -40,9 +37,10 @@
   padding-right: 10px;
   padding-bottom: 25px;
   padding-left: 25px;
+  flex-basis: 48%;
 
-  @media (min-width: $tablet-width) {
-    flex-basis: 48%;
+  @media (max-width: $desktop-width) {
+    flex-basis: auto;
   }
 
   @media (min-width: $desktopwide-width) {
@@ -54,7 +52,7 @@
   position: relative;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 30px;
   }
 
@@ -100,10 +98,10 @@
   font-family: $roboto;
   font-weight: $fontweight-normal;
   color: $color-skyblue;
-  font-size: $fontsize-above;
+  font-size: $fontsize-much-bigger;
 
-  @media (min-width: $tablet-width) {
-    font-size: $fontsize-much-bigger;
+  @media (max-width: $tablet-width) {
+    font-size: $fontsize-above;
   }
 }
 

@@ -5,9 +5,11 @@ $ptmono: "PT Mono", Arial, sans-serif;
 
 // Разрешения экрана
 
-$tablet-width: 768px;
-$desktop-width: 1024px;
+
 $desktopwide-width: 1400px;
+$desktop-width: 1023px;
+$tablet-width: 767px;
+$mobile-width: 319px;
 
 // Ретина-условия
 $retina-dpi: 144dpi;
@@ -31,9 +33,7 @@ $fontsize-gigantic: 60px;
 $fontsize-maximized: 80px;
 
 // Толщина шрифта
-$fontweight-lighter: 300;
 $fontweight-normal: 400;
-$fontweight-medium: 500;
 $fontweight-bold: 600;
 
 // Цвета
