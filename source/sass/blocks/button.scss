@@ -1,5 +1,6 @@
 .button {
   font-family: $roboto;
+  font-weight: $fontweight-bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 5px;
@@ -15,7 +16,6 @@
    &--lead {
      background-color: $color-skyblue;
      font-size: $fontsize-standart;
-     font-weight: $fontweight-bold;
      color: $color-white;
      border: none;
      width: 100%;
@@ -51,6 +51,22 @@
   @media (min-width: $desktop-width) {
     &--lead {
       margin-left: 50px;
+    }
+  }
+}
+
+.button__text {
+  &--tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline-block;
     }
   }
 }

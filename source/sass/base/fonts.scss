@@ -1,17 +1,21 @@
 @font-face {
   font-family: "PT Mono";
-  src: url(../fonts/PTMono.ttf);
+  src: url("../fonts/Ptmono.woff2") format("woff2"),
+    url("../fonts/Ptmono.woff") format("woff");
   font-weight: $fontweight-normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url(../fonts/RobotoCondensed-Regular.ttf);
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("ttf");
   font-weight: $fontweight-normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url(../fonts/RobotoCondensed-Bold.ttf);
+  src: url("../fonts/RobotoCondensed-Bold.ttf") format("ttf");
   font-weight: $fontweight-bold;
+  font-display: swap;
 }

@@ -1,0 +1,115 @@
+.advantage {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+  }
+}
+
+.advantage__wrapper {
+  @include wrapper;
+
+  @media (min-width: $desktopwide-width) {
+    width: 1400px;
+  }
+}
+
+.advantage__list {
+  list-style: none;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktopwide-width) {
+    justify-content: flex-start;
+  }
+}
+
+.advantage__item {
+  border: 1px solid $color-lightgray;
+  border-left: 2px solid $color-skyblue;
+  padding-top: 60px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 48%;
+  }
+
+  @media (min-width: $desktopwide-width) {
+    flex-basis: 600px;
+  }
+}
+
+.advantage__item-position {
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktopwide-width) {
+    margin-right: 30px;
+  }
+}
+
+.advantage__icon {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+
+  &--stopwatch {
+    background-image: url("../img/stopwatch.png");
+    width: 30px;
+    height: 35px;
+  }
+
+  &--hired {
+    background-image: url("../img/hired.png");
+    width: 32px;
+    height: 33px;
+  }
+
+  &--detective {
+    background-image: url("../img/detective.png");
+    width: 31px;
+    height: 27px;
+  }
+
+  &--tag {
+    background-image: url("../img/tag.png");
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.advantage__title {
+  font-family: $roboto;
+  font-weight: $fontweight-normal;
+  color: $color-skyblue;
+  font-size: $fontsize-above;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fontsize-much-bigger;
+  }
+}
+
+.advantage__text {
+  font-family: $ptmono;
+  color: $color-dimgray;
+  font-size: $fontsize-standart;
+  line-height: 22px;
+}
