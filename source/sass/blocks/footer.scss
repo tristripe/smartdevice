@@ -89,8 +89,12 @@
 }
 
 .footer__title::after {
-  content: "+";
-  float: right;
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    content: "+";
+    float: right;
+  }
 }
 
 .footer__address :checked + .footer__title::after,
