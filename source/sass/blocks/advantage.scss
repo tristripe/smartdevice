@@ -1,5 +1,6 @@
 .advantage {
   padding-top: 88px;
+  padding-bottom: 50px;
 
   @media (max-width: $desktop-width) {
     padding-top: 28px;
@@ -35,7 +36,7 @@
 .advantage__item {
   border: 1px solid $color-lightgray;
   border-left: 2px solid $color-skyblue;
-  padding-top: 60px;
+  padding-top: 70px;
   padding-right: 10px;
   padding-bottom: 25px;
   padding-left: 25px;
@@ -61,8 +62,8 @@
 
 .advantage__icon {
   position: absolute;
-  top: 25px;
-  left: 28px;
+  top: 40px;
+  left: 45px;
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -97,6 +98,7 @@
   font-weight: $fontweight-normal;
   color: $color-skyblue;
   font-size: $fontsize-much-bigger;
+  padding-left: 20px;
 
   @media (max-width: $tablet-width) {
     font-size: $fontsize-above;
@@ -108,4 +110,5 @@
   color: $color-dimgray;
   font-size: $fontsize-standart;
   line-height: 22px;
+  padding-left: 20px;
 }

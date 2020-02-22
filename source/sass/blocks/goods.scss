@@ -1,7 +1,7 @@
 .goods {
   background-color: $color-deepdark;
-  padding-top: 50px;
-  padding-bottom: 65px;
+  padding-top: 60px;
+  padding-bottom: 75px;
 }
 
 .goods__wrapper {
@@ -14,6 +14,7 @@
   font-size: $fontsize-large;
   line-height: 42px;
   color: $color-white;
+  padding-bottom: 25px;
 }
 
 .goods__list {
