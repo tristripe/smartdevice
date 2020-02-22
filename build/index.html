@@ -154,7 +154,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__links">
+      <div class="footer__links footer__links-position">
         <a href="" class="footer__logo">
           <img src="img/logo-footer.png" alt="">
         </a>
@@ -177,8 +177,9 @@
         </ul>
       </div>
       <div class="footer__mapping">
-        <h3 class="footer__title">Разделы сайта</h3>
-        <ul class="footer__list">
+        <input class="visually-hidden" type="checkbox" id="mapping-tab" name="tag-group">
+        <label class="footer__title" for="mapping-tab">Разделы сайта</label>
+        <ul class="footer__list footer__list-position">
           <li class="footer__item"><a href="" class="footer__link">О компании</a></li>
           <li class="footer__item"><a href="" class="footer__link">Продукты</a></li>
           <li class="footer__item"><a href="" class="footer__link">Производство печатных плат</a></li>
@@ -188,8 +189,9 @@
           <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>
         </ul>
       </div>
-      <div class="footer__address">
-        <h3 class="footer__title">Наш офис</h3>
+      <div class="footer__address footer__address-position">
+        <input class="visually-hidden" type="checkbox" id="address-tab" name="tag-group">
+        <label class="footer__title" for="address-tab">Наш офис</label>
         <ul class="footer__list">
           <li class="footer__item"><a href="https://goo.gl/maps/4tcngtdyW7GBjYbh6" class="footer__link">г. Мытищи, Олимпийский проспект, д 10</a></li>
           <li class="footer__item"><a href="tel:+7 (495) 589-40-50" class="footer__link">+7 (495) 589-40-50</a></li>

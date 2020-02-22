@@ -1,0 +1,145 @@
+.footer {
+  padding-top: 65px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 20px;
+  }
+}
+
+.footer__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $desktopwide-width) {
+    width: 1400px;
+    justify-content: flex-start;
+  }
+}
+
+.footer__links {
+  @media (max-width: $desktop-width) {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-lightestgray;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__links-position {
+  @media (min-width: $desktopwide-width) {
+    margin-right: 14%;
+  }
+}
+
+.footer__rights {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $desktopwide-width) {
+    column-count: 2;
+    height: 110px; //Не уверен, чо это верное решение
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__address,
+.footer__mapping {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.footer__address-position {
+  position: relative;
+  @media (min-width: $desktopwide-width) {
+    margin-left: auto;
+  }
+}
+
+.footer__checkbox {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.footer__address :checked ~ .footer__list,
+.footer__mapping :checked ~ .footer__list {
+  display: block;
+}
+
+.footer__title::after {
+  content: "+";
+  float: right;
+}
+
+.footer__address :checked + .footer__title::after,
+.footer__mapping :checked + .footer__title::after {
+  content: "-";
+}
+
+.footer__controls {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__item {
+  flex-basis: 25%;
+}
+
+.footer__link {
+  display: block;
+  margin-right: 65px;
+}
+
+.footer__title {
+  font-family: $roboto;
+  font-size: $fontsize-medium;
+  font-weight: $fontweight-normal;
+  text-transform: uppercase;
+  color: $color-deepdark;
+}
+
+.footer__link {
+  font-family: $ptmono;
+  font-size: $fontsize-medium;
+  line-height: 26px;
+  text-decoration: none;
+  color: $color-deepdark;
+  opacity: 0.5;
+}
+
+.footer__rights {
+  border-top: 1px solid $color-lightestgray;
+}
+
+.footer__developer {
+  font-family: $ptmono;
+  font-size: $fontsize-smallest;
+  text-transform: uppercase;
+  color: $color-deepdark;
+  opacity: 0.5;
+}
