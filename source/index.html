@@ -138,15 +138,15 @@
           <img src="img/plane-desktop.png" alt="Отвечаем быстро!" class="feedback__image">
         </div>
         <form class="feedback__form" action="" method="POST">
-          <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
-          <h3 class="feedback__subtitle">Мы проконсультируем Вас бесплатно</h3>
+          <h2 class="feedback__title feedback__title-position">Остались вопросы? Задайте их нам!</h2>
+          <h3 class="feedback__subtitle feedback__subtitle-position">Мы проконсультируем Вас бесплатно</h3>
           <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name">
           <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone">
           <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
-          <button class="button button--feedback feedback__submit-position">Задать вопрос</button>
-          <label class="feedback__label">
-            <input class="feedback__checkbox" type="checkbox">
-            <p class="feedback__tip">Я согласен на обработку персональных данных</p>
+          <button class="button button--feedback button-position--feedback">Задать вопрос</button>
+          <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
+          <label for="agree" class="feedback__label feedback__label-position">
+            <p class="feedback__tip feedback__tip-position">Я согласен на обработку персональных данных</p>
           </label>
         </form>
       </div>

@@ -75,6 +75,10 @@
     margin-left: 50px;
   }
 
+  &--feedback {
+    margin-right: 15px;
+  }
+
   @media (max-width: $desktop-width) {
     &--lead {
       margin-left: 115px;
