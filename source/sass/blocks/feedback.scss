@@ -1,13 +1,28 @@
 .feedback {
   padding-top: 100px;
   background-color: $color-skyblue;
+
+  &--popup {
+    padding-top: 0;
+    width: 490px;
+  }
 }
 
+.feedback-position {
+  &--popup {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .feedback__wrapper {
   @include wrapper;
   display: flex;
   justify-content: space-between;
+
+  &--popup {
+    width: 490px;
+  }
 
   @media (max-width: $desktop-width) {
     width: auto;
@@ -16,6 +31,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+.feedback__wrapper-position {
+  position: relative;
 }
 
 .feedback__image-wrapper {
@@ -33,6 +52,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  &--popup {
+    flex-basis: 100%;
+    width: 100%;
+  }
 
   @media (max-width: $desktop-width) {
     flex-basis: 100%;
@@ -64,6 +88,10 @@
   font-size: $fontsize-smaller;
   color: $color-white;
   opacity: 0.8;
+
+  &--popup {
+    flex-basis: 100%;
+  }
 }
 
 .feedback__input,
@@ -81,6 +109,10 @@
 
 .feedback__input {
   flex-basis: 47%;
+
+  &--popup {
+    flex-basis: 100%;
+  }
 
   @media (max-width: $tablet-width) {
     flex-basis: 100%;
@@ -110,4 +142,24 @@
 
 .feedback__image {
   margin-top: 60px;
+}
+
+.feedback__outer {
+  position: absolute;
+  padding-top: 136px;
+  padding-bottom: 200px;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.feedback__close {
+  width: 17px;
+  height: 17px;
+}
+
+.feedback__close-position {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
