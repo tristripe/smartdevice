@@ -118,6 +118,7 @@
   opacity: 0.8;
   padding-left: 27px;
 
+
   &--popup {
     flex-basis: 100%;
   }
@@ -129,6 +130,7 @@
 
 .feedback__label-position {
   position: relative;
+  margin-top: 10px;
 }
 
 .feedback__label::before {
@@ -205,16 +207,6 @@
   margin-top: 100px;
 }
 
-.feedback__outer {
-  position: absolute;
-  padding-top: 136px;
-  padding-bottom: 200px;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,0.7);
-  display: none;
-}
-
 .feedback__close {
   width: 17px;
   height: 17px;
@@ -224,8 +216,4 @@
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
-.feedback__tip-position {
-  margin-top: 10px;
 }

@@ -42,7 +42,7 @@
       <div class="lead__wrapper">
         <h1 class="lead__title lead__title-position">Печатные платы</h1>
         <p class="lead__subtitle lead__subtitle-position">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button class="button button-position--lead button--lead">
+        <button class="button button--lead button-position button-position--lead">
           <span class="button__text button__text--mobile">Бесплатная консультация</span>
           <span class="button__text button__text--tablet">Заказать бесплатную консультацию</span>
         </button>
@@ -137,17 +137,15 @@
         <div class="feedback__image-wrapper">
           <img src="img/plane-desktop.png" alt="Отвечаем быстро!" class="feedback__image">
         </div>
-        <form class="feedback__form" action="" method="POST">
+        <form class="feedback__form" action="#" method="POST">
           <h2 class="feedback__title feedback__title-position">Остались вопросы? Задайте их нам!</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position">Мы проконсультируем Вас бесплатно</h3>
           <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name">
           <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone">
           <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
-          <button class="button button--feedback button-position--feedback">Задать вопрос</button>
+          <button class="button button-position button--feedback button-position--feedback">Задать вопрос</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
-          <label for="agree" class="feedback__label feedback__label-position">
-            <p class="feedback__tip feedback__tip-position">Я согласен на обработку персональных данных</p>
-          </label>
+          <label for="agree" class="feedback__label feedback__label-position">Я согласен на обработку персональных данных</label>
         </form>
       </div>
     </section>
@@ -194,9 +192,9 @@
         <label class="footer__title" for="address-tab">Наш офис</label>
         <ul class="footer__list">
           <li class="footer__item"><a href="https://goo.gl/maps/4tcngtdyW7GBjYbh6" class="footer__link">г. Мытищи, Олимпийский проспект, д 10</a></li>
-          <li class="footer__item"><a href="tel:+7 (495) 589-40-50" class="footer__link">+7 (495) 589-40-50</a></li>
-          <li class="footer__item"><a href="tel:+7 (925) 003-87-67" class="footer__link">+7 (925) 003-87-67</a></li>
-          <li class="footer__item"><a href="tel:+7 (926) 926-080-79" class="footer__link">+7 (926) 926-080-79</a></li>
+          <li class="footer__item"><a href="tel:+74955894050" class="footer__link">+7 (495) 589-40-50</a></li>
+          <li class="footer__item"><a href="tel:+79250038767" class="footer__link">+7 (925) 003-87-67</a></li>
+          <li class="footer__item"><a href="tel:+792692608079" class="footer__link">+7 (926) 926-080-79</a></li>
         </ul>
       </div>
       <div class="footer__rights">
@@ -208,22 +206,22 @@
     </div>
   </footer>
 
-  <div class="feedback__outer feedback__outer-position">
-    <section class="feedback feedback--popup feedback-position--popup">
+  <div class="popup">
+    <section class="feedback feedback-position feedback--popup feedback-position--popup">
       <div class="feedback__wrapper feedback__wrapper-position feedback__wrapper--popup">
         <span class="feedback__close feedback__close-position">
           <img src="img/cross.png" alt="Закрыть форму без сохранения" width="17" height="17">
         </span>
-        <form class="feedback__form feedback__form--popup" action="" method="POST">
+        <form class="feedback__form feedback__form--popup" action="#" method="POST">
           <h2 class="feedback__title">Закажите звонок</h2>
           <h3 class="feedback__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
           <input class="feedback__input feedback__input-position feedback__input--popup" type="text" placeholder="Имя" name="name">
           <input class="feedback__input feedback__input-position feedback__input--popup" type="text" placeholder="Телефон" name="phone">
           <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
-          <button class="button button--popup button--feedback feedback__submit-position">Задать вопрос</button>
+          <button class="button button-position button--popup button--feedback">Задать вопрос</button>
           <label class="feedback__label feedback__label--popup">
             <input class="feedback__checkbox" type="checkbox">
-            <p class="feedback__tip">Я согласен на обработку персональных данных</p>
+            Я согласен на обработку персональных данных
           </label>
         </form>
       </div>
