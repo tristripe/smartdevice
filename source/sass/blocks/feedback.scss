@@ -5,6 +5,7 @@
 
   &--popup {
     padding-top: 0;
+    padding-bottom: 40px;
     width: 490px;
   }
 
@@ -28,6 +29,8 @@
 
   &--popup {
     width: 490px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   @media (max-width: $desktop-width) {
@@ -42,6 +45,12 @@
     width: 1200px;
     padding-left: 0;
     padding-right: 0;
+
+    &--popup {
+      width: 490px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
   }
 }
 
@@ -89,6 +98,10 @@
 
 .feedback__title-position {
   margin-bottom: 10px;
+
+  &--popup {
+    margin-bottom: 0;
+  }
 }
 
 .feedback__subtitle {
@@ -101,6 +114,10 @@
 
 .feedback__subtitle-position {
   margin-bottom: 45px;
+
+  &--popup {
+    margin-bottom: 30px;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 25px;
@@ -120,7 +137,8 @@
 
 
   &--popup {
-    flex-basis: 100%;
+    flex-basis: 350px;
+    padding-left: 45px;
   }
 
   @media (max-width: $tablet-width) {
@@ -177,6 +195,10 @@
 .feedback__input-position {
   margin-bottom: 40px;
 
+  &--popup {
+    margin-bottom: 30px;
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 30px;
   }
@@ -192,6 +214,10 @@
 
 .feedback__textarea-position {
   margin-bottom: 43px;
+
+  &--popup {
+    margin-bottom: 30px;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 30px;

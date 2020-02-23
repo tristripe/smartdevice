@@ -81,6 +81,10 @@
     margin-right: 15px;
   }
 
+  &--popup {
+    margin-bottom: 30px;
+  }
+
   @media (max-width: $desktop-width) {
     &--lead {
       margin-left: 115px;

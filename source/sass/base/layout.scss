@@ -25,10 +25,10 @@ img {
 
 .popup {
   position: absolute;
+  z-index: 9999;
   padding-top: 136px;
   padding-bottom: 200px;
   top: 0;
   width: 100%;
   background-color: rgba(0,0,0,0.7);
-  display: none;
 }
