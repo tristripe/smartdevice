@@ -35,14 +35,18 @@
   text-transform: uppercase;
   color: $color-white;
   letter-spacing: 0.07em;
-  font-size: $fontsize-gigantic;
+  font-size: $fontsize-maximized;
   width: 800px;
 
   @media (max-width: $desktop-width) {
-    font-size: $fontsize-giant;
+    font-size: $fontsize-gigantic;
     width: 400px;
   }
 
+  @media (max-width: $tablet-width) {
+    font-size: $fontsize-giant;
+    width: 270px;
+  }
 }
 
 .lead__title-position {
@@ -52,6 +56,10 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 20px;
     margin-left: 64px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -78,6 +86,11 @@
 
   @media (max-width: $desktop-width) {
     font-size: $fontsize-standart;
+    width: 350px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
   }
 }
 
@@ -92,6 +105,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 32px;
+    margin-left: 0;
   }
 }
 
