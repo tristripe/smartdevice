@@ -88,7 +88,7 @@
   left: 35px;
 }
 
-.goods__link {
+.goods__arrow {
   font-family: $roboto;
   font-weight: $fontweight-normal;
   text-decoration: none;
@@ -101,7 +101,7 @@
   justify-content: center;
 }
 
-.goods__link-position {
+.goods__arrow-position {
   position: absolute;
   right: 0;
   bottom: 4px;
@@ -114,5 +114,15 @@
   @media (max-width: $desktop-width) {
     width: 720px;
     height: 256px;
+  }
+}
+
+// Взаимодействие
+
+.goods__item:hover .goods__arrow {
+  @media (min-width: $desktop-width) {
+    transition: 150ms;
+    background-color: $color-white;
+    color: $color-skyblue;
   }
 }

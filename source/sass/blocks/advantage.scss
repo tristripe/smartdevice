@@ -42,6 +42,7 @@
   padding-bottom: 25px;
   padding-left: 25px;
   flex-basis: 48%;
+  cursor: pointer;
 
   @media (max-width: $desktop-width) {
     flex-basis: 48%;
@@ -120,4 +121,37 @@
   font-size: $fontsize-standart;
   line-height: 22px;
   padding-left: 20px;
+}
+
+// Взаимодействие с элементами
+
+@media (min-width: $desktop-width) {
+  .advantage__item:hover {
+      transition: 150ms;
+      background-color: $color-skyblue;
+    }
+  }
+
+  .advantage__item:hover .advantage__title,
+  .advantage__item:hover .advantage__text {
+    color: $color-white;
+  }
+
+  .advantage__item:hover .advantage__icon {
+    &--stopwatch {
+      background-image: url("../img/stopwatch--white.png");
+    }
+
+    &--hired {
+      background-image: url("../img/hired--white.png");
+    }
+
+    &--detective {
+      background-image: url("../img/detective--white.png");
+    }
+
+    &--tag {
+      background-image: url("../img/tag--white.png");
+    }
+  }
 }
