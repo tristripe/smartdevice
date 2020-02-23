@@ -2,7 +2,7 @@
   padding-bottom: 20px;
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 83px;
+    padding-bottom: 20px;
   }
 
   @media (max-width: $tablet-width) {
@@ -25,6 +25,8 @@
 
   @media (max-width: $tablet-width) {
     background-image: none;
+    padding-bottom: 0;
+    padding-left: 15px;
   }
 
   @media (min-width: $desktopwide-width) {
@@ -36,7 +38,6 @@
   font-family: $roboto;
   font-weight: $fontweight-normal;
   font-size: $fontsize-largest;
-
   color: $color-dimgray;
 
   @media (max-width: $desktop-width) {
@@ -57,4 +58,11 @@
 
 .about__text-position {
   margin-bottom: 35px;
+}
+
+.about__text-wrapper p:last-child {
+  @media (max-width: $desktop-width) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
