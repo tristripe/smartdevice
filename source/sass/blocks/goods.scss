@@ -2,19 +2,38 @@
   background-color: $color-deepdark;
   padding-top: 60px;
   padding-bottom: 75px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 11px;
+  }
 }
 
 .goods__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktopwide-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .goods__title {
   font-family: $roboto;
   font-weight: $fontweight-normal;
-  font-size: $fontsize-large;
+  font-size: $fontsize-largest;
   line-height: 42px;
   color: $color-white;
   padding-bottom: 25px;
+
+  @media (max-width: $desktop-width) {
+    font-size: $fontsize-larger;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: $fontsize-large;
+    padding-bottom: 15px;
+  }
 }
 
 .goods__list {
@@ -46,6 +65,11 @@
 
   @media (max-width: $desktop-width) {
     margin-right: 0;
+    margin-bottom: 46px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -65,6 +89,8 @@
 }
 
 .goods__link {
+  font-family: $roboto;
+  font-weight: $fontweight-normal;
   text-decoration: none;
   color: $color-white;
   width: 63px;
