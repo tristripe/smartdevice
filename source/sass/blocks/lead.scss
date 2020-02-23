@@ -1,24 +1,40 @@
 .lead {
-  background-color: $color-teal;
   padding-top: 180px;
   padding-bottom: 290px;
-  background-image: url("../img/plate-desktop.png");
-  background-position: 85% 165px;
-  background-repeat: no-repeat;
 
   @media (max-width: $desktop-width) {
     padding-top: 60px;
     padding-bottom: 170px;
-    background-image: url("../img/plate-tablet.png");
-    background-position: right 40px;
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 170px;
     padding-bottom: 70px;
-    background-image: url("../img/plate-mobile.png");
-    background-position: right 0;
   }
+}
+
+.lead-position {
+  position: relative;
+}
+
+.lead__image-wrapper {
+  position: absolute;
+  right: 9%;
+  top: 165px;
+  z-index: 0;
+
+  @media (max-width: $desktop-width) {
+    top: 40px;
+    right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+.lead__image {
+  z-index: 0;
 }
 
 .lead__wrapper {
@@ -37,6 +53,7 @@
   letter-spacing: 0.07em;
   font-size: $fontsize-maximized;
   width: 800px;
+  z-index: 1;
 
   @media (max-width: $desktop-width) {
     font-size: $fontsize-gigantic;
@@ -50,8 +67,9 @@
 }
 
 .lead__title-position {
-    margin-bottom: 35px;
-    margin-left: 0;
+  position: relative;
+  margin-bottom: 35px;
+  margin-left: 0;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 20px;
@@ -67,6 +85,7 @@
   position: relative;
   font-family: $ptmono;
   font-size: $fontsize-higher;
+  z-index: 1;
 
   color: $color-white;
   line-height: 1.7em;

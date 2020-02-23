@@ -36,12 +36,17 @@
       </ul>
       <button class="button button-position button--callback">Заказать звонок</button>
     </div>
-  </header>
-  <main>
-    <section class="lead">
+    <section class="lead lead-position">
       <div class="lead__wrapper">
         <h1 class="lead__title lead__title-position">Печатные платы</h1>
         <p class="lead__subtitle lead__subtitle-position">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <div class="lead__image-wrapper">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/plate-mobile.png">
+            <source media="(max-width: 1023px)" srcset="img/plate-tablet.png">
+            <img src="img/plate-desktop.png" alt="Производство и монтаж электронных комплектующих - Smart Device">
+          </picture>
+        </div>
         <button class="button button--lead button-position button-position--lead">
           <span class="button__text button__text--mobile">Бесплатная консультация</span>
           <span class="button__text button__text--tablet">Заказать бесплатную консультацию</span>
@@ -49,6 +54,8 @@
         <a href="#" class="lead__anchor">Скролл вниз</a>
       </div>
     </section>
+  </header>
+  <main>
     <section class="advantage">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantage__wrapper">

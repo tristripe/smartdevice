@@ -127,9 +127,8 @@
 
 @media (min-width: $desktop-width) {
   .advantage__item:hover {
-      transition: 150ms;
-      background-color: $color-skyblue;
-    }
+    transition: 150ms;
+    background-color: $color-skyblue;
   }
 
   .advantage__item:hover .advantage__title,
