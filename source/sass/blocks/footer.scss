@@ -3,7 +3,11 @@
   padding-bottom: 15px;
 
   @media (max-width: $desktop-width) {
-    padding-top: 20px;
+    padding-top: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 45px;
   }
 }
 
@@ -60,13 +64,22 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+    padding-bottom: 10px;
   }
 }
 
 .footer__address,
 .footer__mapping {
+  @media (max-width: $desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
   @media (max-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100%;
+    border-bottom: 1px solid $color-lightestgray;
   }
 }
 
@@ -95,7 +108,12 @@
 
   @media (max-width: $tablet-width) {
     content: "+";
-    float: right;
+    display: block;
+    font-family: $ptmono;
+    font-size: 20px;
+    padding-right: 10px;
+    color: $color-gray;
+    font-size: $fontsize-much-bigger;
   }
 }
 
@@ -114,11 +132,11 @@
 
 .footer__item {
   flex-basis: 25%;
+  width: 340px;
 }
 
 .footer__link {
   display: block;
-  margin-right: 65px;
 }
 
 .footer__title {
@@ -127,6 +145,16 @@
   font-weight: $fontweight-normal;
   text-transform: uppercase;
   color: $color-deepdark;
+
+
+  @media (max-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .footer__link {
@@ -140,6 +168,10 @@
 
 .footer__rights {
   border-top: 1px solid $color-lightestgray;
+
+  @media (max-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .footer__developer {
@@ -149,16 +181,28 @@
   color: $color-deepdark;
   opacity: 0.5;
 
-  &--reserved {
-    margin-right: 100px;
+  @media (min-width: $desktopwide-width) {
+    &--reserved {
+      margin-right: 100px;
+    }
+
+    &--dates {
+      margin-right: 140px;
+    }
+
+    &--trademark {
+      margin-left: auto;
+    }
   }
 
-  &--dates {
-    margin-right: 140px;
-  }
+  @media (max-width: $desktop-width) {
+    &--reserved {
+      display: none;
+    }
 
-  &--trademark {
-    margin-left: auto;
+    &--dates {
+      display: none;
+    }
   }
 }
 
@@ -168,4 +212,12 @@
 
 .footer__logo-position {
   margin-bottom: 50px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }

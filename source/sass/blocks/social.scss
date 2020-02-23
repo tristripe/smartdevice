@@ -8,4 +8,12 @@
 
 .social-position {
   margin-bottom: 60px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
