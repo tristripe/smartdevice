@@ -18,6 +18,8 @@
   }
 
   &--lead {
+    display: block;
+    text-align: center;
     width: 407px;
     background-color: $color-skyblue;
     font-size: $fontsize-standart;
@@ -32,6 +34,9 @@
     background-color: $color-white;
     border: 1px solid $color-skyblue;
     color: $color-skyblue;
+    text-decoration: none;
+    display: block;
+    text-align: center;
   }
 
   &--feedback {

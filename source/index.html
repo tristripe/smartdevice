@@ -34,7 +34,7 @@
           </a>
         </li>
       </ul>
-      <button class="button button-position button--callback">Заказать звонок</button>
+      <button class="button button-position button--callback" type="button">Заказать звонок</button>
     </div>
     <section class="lead lead-position">
       <div class="lead__wrapper">
@@ -47,16 +47,16 @@
             <img src="img/plate-desktop.png" alt="Производство и монтаж электронных комплектующих - Smart Device">
           </picture>
         </div>
-        <button class="button button--lead button-position button-position--lead">
+        <a class="button button--lead button-position button-position--lead" href="#feedback">
           <span class="button__text button__text--mobile">Бесплатная консультация</span>
           <span class="button__text button__text--tablet">Заказать бесплатную консультацию</span>
-        </button>
-        <a href="#" class="lead__anchor">Скролл вниз</a>
+        </a>
+        <a href="#advantage" class="lead__anchor">Скролл вниз</a>
       </div>
     </section>
   </header>
   <main>
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantage__wrapper">
         <ul class="advantage__list">
@@ -96,7 +96,7 @@
             Среди наших клиентов крупнейшие Производители светотехники России.
           </p>
         </div>
-        <button class="button button--about">Подробнее</button>
+        <a class="button button--about" href="#" aria-label="Перейти на страницу О компании">Подробнее</a>
       </div>
     </section>
     <section class="goods">
@@ -104,7 +104,7 @@
         <h2 class="goods__title">Service Device предлагает следующие товары и услуги</h2>
         <ul class="goods__list goods__list-position">
           <li class="goods__item goods__item-position">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link" aria-label="Производство печатных плат">
               <h3 class="goods__subtitle goods__subtitle-position">Производство печатных плат</h3>
               <div class="goods__image-wrapper">
                 <picture>
@@ -117,7 +117,7 @@
             </a>
           </li>
           <li class="goods__item goods__item-position">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link" aria-label="Монтаж печатных плат">
               <h3 class="goods__subtitle goods__subtitle-position">Монтаж печатных плат</h3>
               <div class="goods__image-wrapper">
                 <picture>
@@ -130,7 +130,7 @@
             </a>
           </li>
           <li class="goods__item goods__item-position">
-            <a href="#" class="goods__link">
+            <a href="#" class="goods__link" aria-label="Комплектующие для светотехники">
               <h3 class="goods__subtitle goods__subtitle-position">Комплектующие для светотехники</h3>
               <div class="goods__image-wrapper">
                 <picture>
@@ -145,7 +145,7 @@
         </ul>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__wrapper">
         <div class="feedback__image-wrapper">
           <img src="img/plane-desktop.png" alt="Отвечаем быстро!" class="feedback__image">
@@ -156,7 +156,7 @@
           <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name">
           <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone">
           <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
-          <button class="button button-position button--feedback button-position--feedback">Задать вопрос</button>
+          <button class="button button-position button--feedback button-position--feedback" type="submit">Задать вопрос</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
           <label for="agree" class="feedback__label feedback__label-position">Я согласен на обработку персональных данных</label>
         </form>
@@ -167,22 +167,23 @@
     <div class="footer__wrapper">
       <div class="footer__links footer__links-position">
         <a href="#" class="footer__logo footer__logo-position">
-          <img src="img/logo-footer.png" alt="">
+          <img src="img/logo-footer.png" alt="Производство и монтаж электронных комплектующих - Smart Device">
         </a>
+        <p class="footer__developer footer__developer--logo">1999-2018 SD Service Devices</p>
         <ul class="social social-position">
           <li class="social__item">
-            <a href="#" class="social__link">
-              <img src="img/fb.png" alt="">
+            <a href="#" class="social__link" aria-label="Перейти на нашу страницу в Фейсбуке">
+              <img src="img/fb.png" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
-              <img src="img/ok.png" alt="">
+            <a href="#" class="social__link" aria-label="Посетить группу в Одноклассниках">
+              <img src="img/ok.png" alt="Наша группа в Одноклассниках">
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
-              <img src="img/vk.png" alt="">
+            <a href="#" class="social__link" aria-label="Зайти в наше сообщество Вконтакте">
+              <img src="img/vk.png" alt="Сообщество Вконтакте">
             </a>
           </li>
         </ul>
@@ -222,7 +223,7 @@
   <div class="popup">
     <section class="feedback feedback-position feedback--popup feedback-position--popup">
       <div class="feedback__wrapper feedback__wrapper-position feedback__wrapper--popup">
-        <span class="feedback__close feedback__close-position">
+        <span class="feedback__close feedback__close-position" aria-label="Закрыть форму без сохранения">
           <img src="img/cross.png" alt="Закрыть форму без сохранения" width="17" height="17">
         </span>
         <form class="feedback__form feedback__form--popup" action="#" method="POST">
@@ -231,7 +232,7 @@
           <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="text" placeholder="Имя" name="name">
           <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="tel" placeholder="Телефон" name="phone">
           <textarea class="feedback__textarea feedback__textarea-position feedback__textarea-position--popup" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
-          <button class="button button-position button-position--popup button--popup button--feedback">Отправить</button>
+          <button class="button button-position button-position--popup button--popup button--feedback" type="submit">Отправить</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree--popup">
           <label for="agree--popup" class="feedback__label feedback__label-position feedback__label--popup feedback__label-position-popup">
             Я согласен на обработку персональных данных

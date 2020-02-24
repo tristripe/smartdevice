@@ -135,6 +135,10 @@
   text-decoration: none;
   display: block;
   opacity: 0.5;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 12%;
+  bottom: 150px;
 
 
   @media (max-width: $desktop-width) {

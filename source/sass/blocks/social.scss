@@ -10,10 +10,11 @@
   margin-bottom: 60px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }

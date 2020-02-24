@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -31,4 +32,5 @@ img {
   top: 0;
   width: 100%;
   background-color: rgba(0,0,0,0.7);
+  display: none;
 }

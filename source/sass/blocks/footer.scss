@@ -28,7 +28,12 @@
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid $color-lightestgray;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 15px;
   }
 
   @media (max-width: $tablet-width) {
@@ -182,6 +187,9 @@
   text-transform: uppercase;
   color: $color-deepdark;
   opacity: 0.5;
+  &--logo {
+    display: none;
+  }
 
   @media (min-width: $desktopwide-width) {
     &--reserved {
@@ -205,6 +213,10 @@
     &--dates {
       display: none;
     }
+
+    &--logo {
+      display: block;
+    }
   }
 }
 
@@ -220,6 +232,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
