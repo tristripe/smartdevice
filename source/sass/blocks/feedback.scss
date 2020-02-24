@@ -236,10 +236,15 @@
 .feedback__close {
   width: 17px;
   height: 17px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 .feedback__close-position {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 5;
 }

@@ -36,6 +36,8 @@
       </ul>
       <button class="button button-position button--callback" type="button">Заказать звонок</button>
     </div>
+  </header>
+  <main>
     <section class="lead lead-position">
       <div class="lead__wrapper">
         <h1 class="lead__title lead__title-position">Печатные платы</h1>
@@ -54,8 +56,6 @@
         <a href="#advantage" class="lead__anchor">Скролл вниз</a>
       </div>
     </section>
-  </header>
-  <main>
     <section class="advantage" id="advantage">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantage__wrapper">
@@ -220,12 +220,12 @@
     </div>
   </footer>
 
-  <div class="popup">
+  <div class="popup hidden">
     <section class="feedback feedback-position feedback--popup feedback-position--popup">
       <div class="feedback__wrapper feedback__wrapper-position feedback__wrapper--popup">
-        <span class="feedback__close feedback__close-position" aria-label="Закрыть форму без сохранения">
+        <button class="feedback__close feedback__close-position" aria-label="Закрыть форму без сохранения">
           <img src="img/cross.png" alt="Закрыть форму без сохранения" width="17" height="17">
-        </span>
+        </button>
         <form class="feedback__form feedback__form--popup" action="#" method="POST">
           <h2 class="feedback__title feedback__title-position feedback__title-position--popup">Закажите звонок</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position feedback__subtitle-position--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
@@ -241,6 +241,8 @@
       </div>
     </section>
   </div>
+  <script src="js/app.js">
 
+  </script>
 </body>
 </html>

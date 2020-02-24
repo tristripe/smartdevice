@@ -1,14 +1,17 @@
 .lead {
-  padding-top: 180px;
+  padding-top: 250px;
   padding-bottom: 290px;
+  background-color: $color-teal;
+  background-image: url("../img/lead-bg.png");
+  background-size: cover;
 
   @media (max-width: $desktop-width) {
-    padding-top: 60px;
+    padding-top: 170px;
     padding-bottom: 170px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 170px;
+    padding-top: 280px;
     padding-bottom: 70px;
   }
 }
@@ -20,16 +23,16 @@
 .lead__image-wrapper {
   position: absolute;
   right: 9%;
-  top: 165px;
+  top: 255px;
   z-index: 0;
 
   @media (max-width: $desktop-width) {
-    top: 40px;
+    top: 130px;
     right: 0;
   }
 
   @media (max-width: $tablet-width) {
-    top: 0;
+    top: 120px;
   }
 }
 
