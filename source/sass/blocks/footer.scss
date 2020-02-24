@@ -59,7 +59,10 @@
 
   @media (min-width: $desktopwide-width) {
     column-count: 2;
-    height: 110px; //Не уверен, чо это верное решение
+
+    &--links {
+      display: block;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -132,7 +135,6 @@
 
 .footer__item {
   flex-basis: 25%;
-  width: 340px;
 }
 
 .footer__link {
