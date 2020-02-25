@@ -43,5 +43,7 @@
 }
 
 .service__link:hover {
-  color: $color-skyblue;
+  @media (min-width: $desktop-width) {
+    color: $color-skyblue;
+  }
 }
