@@ -8,11 +8,21 @@
   @media (max-width: $desktop-width) {
     padding-top: 170px;
     padding-bottom: 170px;
+    background-image: url("../img/lead-tablet-bg.png"),
+      url("../img/vector-lead-tablet.png");
+      background-size: cover, 770px 569px;
+      background-repeat: no-repeat;
+      background-position: center center, right 30px;
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 280px;
     padding-bottom: 70px;
+    background-image: url("../img/lead-mobile-bg.png"),
+      url("../img/vector-lead-mobile.png");
+    background-size: cover, 320px 520px;
+    background-repeat: no-repeat;
+    background-position: center center, right 30px;
   }
 }
 
