@@ -55,6 +55,14 @@
   padding-top: 15px;
 }
 
+.footer__rights-position {
+  margin-top: 10px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
 .footer__list {
   list-style: none;
   padding-left: 0;

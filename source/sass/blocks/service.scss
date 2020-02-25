@@ -23,6 +23,7 @@
   font-family: $ptmono;
   background-repeat: no-repeat;
   background-position: center center;
+  transition: 150ms;
   &--email {
     background-image: url('../img/envelope.png');
     margin-right: 23px;
@@ -39,4 +40,8 @@
     padding-left: 0;
     font-size: 0;
   }
+}
+
+.service__link:hover {
+  color: $color-skyblue;
 }
