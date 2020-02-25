@@ -54,7 +54,6 @@
     width: 100%;
   }
 
-
   @media (max-width: $desktop-width) {
     &--callback {
       display: none;
@@ -74,10 +73,40 @@
       width: 100%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    transition: 150ms;
+
+    &--callback:hover {
+      background-color: $color-white;
+      color: $color-teal;
+    }
+
+    &--lead:hover {
+      background-color: $color-white;
+      color: $color-skyblue;
+    }
+
+    &--about:hover {
+      background-color: $color-skyblue;
+      color: $color-white;
+    }
+
+    &--feedback:hover {
+      background-color: $color-white;
+      color: $color-skyblue;
+    }
+
+    &--popup:hover {
+      background-color: $color-white;
+      color: $color-skyblue;
+    }
+  }
 }
 
 .button-position {
   position: relative;
+
   &--lead {
     margin-left: 50px;
   }
@@ -124,39 +153,6 @@
 
     &--mobile {
       display: inline-block;
-    }
-  }
-}
-
-// Интерактивность
-
-.button {
-  @media (min-width: $desktop-width) {
-    transition: 150ms;
-
-    &--callback:hover {
-      background-color: $color-white;
-      color: $color-teal;
-    }
-
-    &--lead:hover {
-      background-color: $color-white;
-      color: $color-skyblue;
-    }
-
-    &--about:hover {
-      background-color: $color-skyblue;
-      color: $color-white;
-    }
-
-    &--feedback:hover {
-      background-color: $color-white;
-      color: $color-skyblue;
-    }
-
-    &--popup:hover {
-      background-color: $color-white;
-      color: $color-skyblue;
     }
   }
 }

@@ -176,7 +176,7 @@
   background-position: center center;
 }
 
-.feedback__checkbox:checked+.feedback__label::before {
+.feedback__checkbox:checked + .feedback__label::before {
   background-image: url("../img/checked.png");
 }
 

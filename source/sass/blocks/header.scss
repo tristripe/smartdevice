@@ -6,8 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include wrapper;
   padding-top: 33px;
+
+  @include wrapper;
 
   @media (min-width: $desktopwide-width) {
     width: 1400px;

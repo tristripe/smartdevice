@@ -53,6 +53,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  border-top: 1px solid $color-lightestgray;
+
+  @media (max-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .footer__rights-position {
@@ -106,6 +111,7 @@
 
 .footer__address-position {
   position: relative;
+
   @media (min-width: $desktopwide-width) {
     margin-left: auto;
   }
@@ -134,7 +140,6 @@
     font-size: 20px;
     padding-right: 10px;
     color: $color-gray;
-    font-size: $fontsize-much-bigger;
   }
 }
 
@@ -157,6 +162,12 @@
 
 .footer__link {
   display: block;
+  font-family: $ptmono;
+  font-size: $fontsize-medium;
+  line-height: 26px;
+  text-decoration: none;
+  color: $color-deepdark;
+  opacity: 0.5;
 }
 
 .footer__title {
@@ -177,29 +188,13 @@
   }
 }
 
-.footer__link {
-  font-family: $ptmono;
-  font-size: $fontsize-medium;
-  line-height: 26px;
-  text-decoration: none;
-  color: $color-deepdark;
-  opacity: 0.5;
-}
-
-.footer__rights {
-  border-top: 1px solid $color-lightestgray;
-
-  @media (max-width: $tablet-width) {
-    border: none;
-  }
-}
-
 .footer__developer {
   font-family: $ptmono;
   font-size: $fontsize-smallest;
   text-transform: uppercase;
   color: $color-deepdark;
   opacity: 0.5;
+
   &--logo {
     display: none;
   }

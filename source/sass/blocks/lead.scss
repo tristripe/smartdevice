@@ -10,9 +10,9 @@
     padding-bottom: 170px;
     background-image: url("../img/lead-tablet-bg.png"),
       url("../img/vector-lead-tablet.png");
-      background-size: cover, 770px 569px;
-      background-repeat: no-repeat;
-      background-position: center center, right 30px;
+    background-size: cover, 770px 569px;
+    background-repeat: no-repeat;
+    background-position: center center, right 30px;
   }
 
   @media (max-width: $tablet-width) {
@@ -48,9 +48,6 @@
 
 .lead__image {
   z-index: 0;
-}
-
-.lead__image {
   width: 705px;
   height: 515px;
 
@@ -120,7 +117,7 @@
   padding-left: 48px;
   width: 550px;
 
-  &:before {
+  &::before {
     display: block;
     position: absolute;
     content: "";
@@ -142,8 +139,8 @@
 }
 
 .lead__subtitle-position {
-    margin-bottom: 42px;
-    margin-left: 0;
+  margin-bottom: 42px;
+  margin-left: 0;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 52px;

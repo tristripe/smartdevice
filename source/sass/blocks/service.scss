@@ -5,7 +5,8 @@
 }
 
 .service-position {
-    margin-right: 40px;
+  margin-right: 40px;
+
   @media (max-width: $desktop-width) {
     margin-right: 0;
   }
@@ -24,14 +25,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   transition: 150ms;
+
   &--email {
-    background-image: url('../img/envelope.png');
+    background-image: url("../img/envelope.png");
     margin-right: 23px;
     background-position: left center;
   }
 
   &--phone {
-    background-image: url('../img/phone-call.png');
+    background-image: url("../img/phone-call.png");
     background-position: left center;
   }
 
