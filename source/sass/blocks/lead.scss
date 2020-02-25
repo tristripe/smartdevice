@@ -40,6 +40,21 @@
   z-index: 0;
 }
 
+.lead__image {
+  width: 705px;
+  height: 515px;
+
+  @media (max-width: $desktop-width) {
+    width: 260px;
+    height: 340px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 294px;
+    height: 220px;
+  }
+}
+
 .lead__wrapper {
   @include wrapper;
 

@@ -3,6 +3,8 @@
 var callbackButton = document.querySelector('.button--callback');
 var popupCallback = document.querySelector('.popup');
 var popupCloseHandler = document.querySelector('.feedback__close');
+var feedbackPhone = document.querySelector('#feedback-phone');
+var popupPhone = document.querySelector('#popup-phone');
 
 var isEscEvent = function (evt, action) {
   if (evt.keyCode === 27) {
@@ -34,5 +36,9 @@ var closeCallback = function () {
   popupCloseHandler.removeEventListener('click', closePopup);
   document.removeEventListener('keydown', pressEscHandler);
 };
-
 callbackButton.addEventListener('click', openCallback);
+
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(feedbackPhone, maskOptions);

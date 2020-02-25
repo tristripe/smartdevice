@@ -10,7 +10,7 @@
 <body>
   <header class="header header-position">
     <div class="header__wrapper">
-      <a href="#" class="logo logo-position">
+      <a class="logo logo-position">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
           <img src="img/logo-mobile.png" alt="Производство и монтаж электронных комплектующих - Smart Device">
@@ -18,7 +18,7 @@
       </a>
       <ul class="service service-position">
         <li class="service__item">
-          <a href="#" class="service__link service__link--email">
+          <a href="mailto:info@sd.ru" class="service__link service__link--email">
             <span class="visually-hidden">
               Отправить email
             </span>
@@ -44,9 +44,12 @@
         <p class="lead__subtitle lead__subtitle-position">производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <div class="lead__image-wrapper">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/plate-mobile.png">
-            <source media="(max-width: 1023px)" srcset="img/plate-tablet.png">
-            <img src="img/plate-desktop.png" alt="Производство и монтаж электронных комплектующих - Smart Device">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/plate-mobile.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/plate-tablet.webp">
+            <source type="image/webp" media="(min-width: 1023px)" srcset="img/plate-desktop.webp">
+            <source media="(max-width: 767px)" srcset="img/plate-mobile.png"> <!-- width="294" height="220" -->
+            <source media="(max-width: 1023px)" srcset="img/plate-tablet.png"> <!-- width="260" height="340" -->
+            <img class="lead__image" src="img/plate-desktop.png" alt="Производство и монтаж электронных комплектующих - Smart Device" width="705" height="515">
           </picture>
         </div>
         <a class="button button--lead button-position button-position--lead" href="#feedback">
@@ -108,9 +111,12 @@
               <h3 class="goods__subtitle goods__subtitle-position">Производство печатных плат</h3>
               <div class="goods__image-wrapper">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/manufacture-mobile.png">
-                  <source media="(max-width: 1023px)" srcset="img/manufacture-tablet.png">
-                  <img src="img/manufacture-desktop.png" class="goods__image" alt="Печатная плата">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/manufacture-mobile.webp">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/manufacture-tablet.webp">
+                  <source type="image/webp" media="(min-width: 1023px)" srcset="img/manufacture-desktop.webp">
+                  <source media="(max-width: 767px)" srcset="img/manufacture-mobile.png"> <!-- width="290" height="256" -->
+                  <source media="(max-width: 1023px)" srcset="img/manufacture-tablet.png"> <!-- width="720" height="256" -->
+                  <img src="img/manufacture-desktop.png" class="goods__image" alt="Печатная плата" width="370" height="620">
                 </picture>
               </div>
             </a>
@@ -120,9 +126,12 @@
               <h3 class="goods__subtitle goods__subtitle-position">Монтаж печатных плат</h3>
               <div class="goods__image-wrapper">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/assembly-mobile.png">
-                  <source media="(max-width: 1023px)" srcset="img/assembly-tablet.png">
-                  <img src="img/assembly-desktop.png" class="goods__image" alt="Монтаж комплектующих">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/assembly-mobile.webp">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/assembly-tablet.webp">
+                  <source type="image/webp" media="(min-width: 1023px)" srcset="img/assembly-desktop.webp">
+                  <source media="(max-width: 767px)" srcset="img/assembly-mobile.png"> <!-- width="290" height="256" -->
+                  <source media="(max-width: 1023px)" srcset="img/assembly-tablet.png"> <!-- width="720" height="256" -->
+                  <img src="img/assembly-desktop.png" class="goods__image" alt="Монтаж комплектующих" width="370" height="620">
                 </picture>
               </div>
             </a>
@@ -132,9 +141,12 @@
               <h3 class="goods__subtitle goods__subtitle-position">Комплектующие для светотехники</h3>
               <div class="goods__image-wrapper">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/components-mobile.png">
-                  <source media="(max-width: 1023px)" srcset="img/components-tablet.png">
-                  <img src="img/components-desktop.png" class="goods__image" alt="Дополнительные компоненты">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/components-mobile.webp">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/components-tablet.webp">
+                  <source type="image/webp" media="(min-width: 1023px)" srcset="img/components-desktop.webp">
+                  <source media="(max-width: 767px)" srcset="img/components-mobile.png"> <!-- width="290" height="256" -->
+                  <source media="(max-width: 1023px)" srcset="img/components-tablet.png"> <!-- width="720" height="256" -->
+                  <img src="img/components-desktop.png" class="goods__image" alt="Дополнительные компоненты" width="370" height="620">
                 </picture>
               </div>
             </a>
@@ -145,13 +157,16 @@
     <section class="feedback" id="feedback">
       <div class="feedback__wrapper">
         <div class="feedback__image-wrapper">
-          <img src="img/plane-desktop.png" alt="Отвечаем быстро!" class="feedback__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/plane-desktop.webp">
+            <img src="img/plane-desktop.png" alt="Отвечаем быстро!" class="feedback__image feedback__image-position" width="511" height="288">
+          </picture>
         </div>
         <form class="feedback__form" action="#" method="POST">
           <h2 class="feedback__title feedback__title-position">Остались вопросы? Задайте их нам!</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position">Мы проконсультируем Вас бесплатно</h3>
           <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name">
-          <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone">
+          <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone" id="feedback-phone">
           <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
           <button class="button button-position button--feedback button-position--feedback" type="submit">Задать вопрос</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
@@ -163,8 +178,11 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__links footer__links-position">
-        <a href="#" class="footer__logo footer__logo-position">
-          <img src="img/logo-footer.png" alt="Производство и монтаж электронных комплектующих - Smart Device">
+        <a class="footer__logo footer__logo-position">
+          <picture>
+            <source type="image/webp" media="(min-width: 1023px)" srcset="img/logo-footer.webp">
+            <img src="img/logo-footer.png" alt="Производство и монтаж электронных комплектующих - Smart Device" width="216" height="52">
+          </picture>
         </a>
         <p class="footer__developer footer__developer--logo">1999-2018 SD Service Devices</p>
         <ul class="social social-position">
@@ -227,7 +245,7 @@
           <h2 class="feedback__title feedback__title-position feedback__title-position--popup">Закажите звонок</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position feedback__subtitle-position--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
           <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="text" placeholder="Имя" name="name">
-          <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="tel" placeholder="Телефон" name="phone">
+          <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="tel" placeholder="Телефон" name="phone" id="popup-phone">
           <textarea class="feedback__textarea feedback__textarea-position feedback__textarea-position--popup" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
           <button class="button button-position button-position--popup button--popup button--feedback" type="submit">Отправить</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree--popup">
@@ -238,8 +256,9 @@
       </div>
     </section>
   </div>
-  <script src="js/app.js">
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 
-  </script>
+
 </body>
 </html>
