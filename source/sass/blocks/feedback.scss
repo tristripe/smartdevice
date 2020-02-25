@@ -51,6 +51,11 @@
     margin-left: auto;
   }
 
+  @media (max-width: $tablet-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   @media (min-width: $desktopwide-width) {
     width: 1200px;
     padding-left: 0;
@@ -69,16 +74,15 @@
 }
 
 .feedback__image-wrapper {
-  flex-basis: 50%;
-  width: 50%;
+  flex-basis: 45%;
+  width: 45%;
 
   @media (max-width: $desktop-width) {
     display: none;
   }
 }
 
-.feedback__form {
-  flex-basis: 47%;
+.feedback__wrapper form {
   width: 47%;
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +94,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    flex-basis: 100%;
+    width: 100%;
   }
 }
 
@@ -190,15 +194,14 @@
 }
 
 .feedback__input {
-  flex-basis: 47%;
   width: 47%;
 
   &--popup {
-    flex-basis: 100%;
+    width: 100%;
   }
 
   @media (max-width: $tablet-width) {
-    flex-basis: 100%;
+    width: 100%;
   }
 }
 
@@ -216,6 +219,7 @@
 
 .feedback__textarea {
   resize: none;
+  width: 100%;
 
   @media (max-width: $desktop-width) {
     flex-basis: auto;

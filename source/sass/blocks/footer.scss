@@ -76,6 +76,11 @@
     &--links {
       display: block;
     }
+
+    &--contacts {
+      display: block;
+      column-count: 1;
+    }
   }
 
   @media (max-width: $tablet-width) {
