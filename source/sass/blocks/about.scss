@@ -62,7 +62,14 @@
 
 .about__text-wrapper p:last-child {
   @media (max-width: $desktop-width) {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  @media (max-width: $tablet-width) {
+    -webkit-line-clamp: 8;
   }
 }

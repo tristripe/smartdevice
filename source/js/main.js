@@ -16,7 +16,6 @@ var pressEscHandler = function (evt) {
   isEscEvent(evt, closeCallback);
 };
 
-
 var openPopup = function () {
   popupCallback.classList.remove('hidden');
 };
@@ -41,4 +40,5 @@ callbackButton.addEventListener('click', openCallback);
 var maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
+
 var mask = IMask(feedbackPhone, maskOptions);
