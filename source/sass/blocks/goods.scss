@@ -22,16 +22,18 @@
   font-family: $roboto;
   font-weight: $fontweight-normal;
   font-size: $fontsize-largest;
-  line-height: 42px;
+  line-height: 51px;
   color: $color-white;
   padding-bottom: 25px;
 
   @media (max-width: $desktop-width) {
     font-size: $fontsize-larger;
+    line-height: 45px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: $fontsize-large;
+    line-height: 39px;
     padding-bottom: 15px;
   }
 }

@@ -38,14 +38,17 @@
   font-family: $roboto;
   font-weight: $fontweight-normal;
   font-size: $fontsize-largest;
+  line-height: 51px;
   color: $color-dimgray;
 
   @media (max-width: $desktop-width) {
     font-size: $fontsize-larger;
+    line-height: 45px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: $fontsize-large;
+    line-height: 39px;
   }
 }
 

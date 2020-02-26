@@ -77,16 +77,19 @@
   color: $color-white;
   letter-spacing: 0.07em;
   font-size: $fontsize-maximized;
+  line-height: 94px;
   width: 800px;
   z-index: 1;
 
   @media (max-width: $desktop-width) {
     font-size: $fontsize-gigantic;
+    line-height: 70px;
     width: 400px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: $fontsize-giant;
+    line-height: 47px;
     width: 270px;
   }
 }
@@ -110,6 +113,7 @@
   position: relative;
   font-family: $ptmono;
   font-size: $fontsize-higher;
+  line-height: 34px;
   z-index: 1;
 
   color: $color-white;
@@ -130,10 +134,12 @@
 
   @media (max-width: $desktop-width) {
     font-size: $fontsize-standart;
+    line-height: 28px;
     width: 350px;
   }
 
   @media (max-width: $tablet-width) {
+    line-height: 25px;
     width: 270px;
   }
 }

@@ -3,14 +3,15 @@
   font-weight: $fontweight-bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding-top: 14px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border-radius: 5px;
   cursor: pointer;
 
   &--callback {
     width: 180px;
     font-size: $fontsize-smaller;
+    line-height: 16px;
     font-weight: $fontweight-bold;
     border: 1px solid $color-white;
     color: $color-white;
@@ -23,6 +24,7 @@
     width: 407px;
     background-color: $color-skyblue;
     font-size: $fontsize-standart;
+    line-height: 19px;
     color: $color-white;
     border: none;
     padding-top: 20px;
@@ -37,6 +39,8 @@
     text-decoration: none;
     display: block;
     text-align: center;
+    font-size: $fontsize-smaller;
+    line-height: 16px;
   }
 
   &--feedback {
@@ -46,6 +50,7 @@
     border: 1px solid $color-white;
     color: $color-white;
     font-size: $fontsize-smaller;
+    line-height: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -140,6 +145,7 @@
 .button__text {
   &--tablet {
     display: inline-block;
+    vertical-align: top;
   }
 
   &--mobile {
@@ -153,6 +159,7 @@
 
     &--mobile {
       display: inline-block;
+      vertical-align: top;
     }
   }
 }

@@ -103,10 +103,17 @@
   font-family: $roboto;
   font-weight: $fontweight-normal;
   font-size: $fontsize-largest;
+  line-height: 51px;
   color: $color-white;
 
   @media (max-width: $tablet-width) {
-    line-height: 50px;
+    font-size: $fontsize-larger;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: $fontsize-large;
+    line-height: 39px;
   }
 }
 
@@ -123,6 +130,7 @@
   font-family: $ptmono;
   font-weight: $fontweight-normal;
   font-size: $fontsize-standart;
+  line-height: 22px;
   color: $color-white;
 }
 
@@ -145,6 +153,7 @@
   font-family: $ptmono;
   font-weight: $fontweight-normal;
   font-size: $fontsize-smaller;
+  line-height: 16px;
   color: $color-white;
   opacity: 0.8;
   padding-left: 27px;
@@ -188,6 +197,7 @@
   font-family: $ptmono;
   font-weight: $fontweight-normal;
   font-size: $fontsize-standart;
+  line-height: 22px;
   color: $color-white;
   background-color: $color-deepblue;
   border: none;

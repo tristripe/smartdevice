@@ -109,10 +109,12 @@
   font-weight: $fontweight-normal;
   color: $color-skyblue;
   font-size: $fontsize-much-bigger;
+  line-height: 34px;
   padding-left: 20px;
 
   @media (max-width: $tablet-width) {
     font-size: $fontsize-above;
+    line-height: 28px;
   }
 }
 
