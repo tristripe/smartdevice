@@ -13,24 +13,46 @@
 .about__wrapper {
   @include wrapper;
   padding-bottom: 110px;
-  padding-left: 210px;
-
-  background-image: url("../img/year-tablet.png");
-  background-repeat: no-repeat;
-  background-position: left 0;
-
-  @media (max-width: $desktop-width) {
-    padding-left: 210px;
-  }
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
     background-image: none;
     padding-bottom: 0;
     padding-left: 15px;
   }
+}
 
-  @media (min-width: $desktopwide-width) {
-    padding-left: 210px;
+.about__image-wrapper {
+  width: 25%;
+
+  @media (max-width: $desktop-width) {
+    width: 30%;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about__image-wrapper-position {
+  margin-top: 30px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 10px;
+  }
+}
+
+.about__content-wrapper {
+  width: 75%;
+
+  @media (max-width: $desktop-width) {
+    width: 70%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
   }
 }
 
