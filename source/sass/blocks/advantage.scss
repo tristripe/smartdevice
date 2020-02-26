@@ -118,7 +118,7 @@
   }
 }
 
-.advantage__text {
+.advantage__item p {
   font-family: $ptmono;
   color: $color-dimgray;
   font-size: $fontsize-standart;
@@ -135,7 +135,7 @@
   }
 
   .advantage__item:hover .advantage__title,
-  .advantage__item:hover .advantage__text {
+  .advantage__item:hover p {
     color: $color-white;
   }
 

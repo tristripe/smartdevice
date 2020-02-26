@@ -157,6 +157,7 @@
   color: $color-white;
   opacity: 0.8;
   padding-left: 27px;
+  cursor: pointer;
 
 
   &--popup {
@@ -201,6 +202,13 @@
   color: $color-white;
   background-color: $color-deepblue;
   border: none;
+}
+
+.feedback__input:hover,
+.feedback__textarea:hover,
+.feedback__input:focus,
+.feedback__textarea:focus {
+  outline: 1px solid $color-white;
 }
 
 .feedback__input {

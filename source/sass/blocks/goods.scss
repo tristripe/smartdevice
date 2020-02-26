@@ -43,21 +43,28 @@
   padding-left: 0;
   width: auto;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $desktop-width) {
     width: 715px;
-    flex-wrap: wrap;
   }
 
   @media (max-width: $tablet-width) {
     width: 290px;
-    flex-wrap: wrap;
   }
 }
 
 .goods__list-position {
   margin-right: auto;
   margin-left: auto;
+}
+
+.goods__item {
+  width: 30%;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .goods__item-position {

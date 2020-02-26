@@ -52,14 +52,11 @@
   }
 }
 
-.about__text {
+.about__wrapper p {
   font-family: $ptmono;
   font-size: $fontsize-standart;
   color: $color-dimgray;
   line-height: 22px;
-}
-
-.about__text-position {
   margin-bottom: 35px;
 }
 

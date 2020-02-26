@@ -19,28 +19,32 @@
   }
 
   &--lead {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
-    width: 407px;
     background-color: $color-skyblue;
     font-size: $fontsize-standart;
     line-height: 19px;
     color: $color-white;
     border: none;
     padding-top: 20px;
+    padding-right: 47px;
     padding-bottom: 18px;
+    padding-left: 47px;
   }
 
   &--about {
-    width: 180px;
+    display: inline-block;
+    vertical-align: top;
     background-color: $color-white;
     border: 1px solid $color-skyblue;
     color: $color-skyblue;
     text-decoration: none;
-    display: block;
     text-align: center;
     font-size: $fontsize-smaller;
     line-height: 16px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   &--feedback {
@@ -62,10 +66,6 @@
   @media (max-width: $desktop-width) {
     &--callback {
       display: none;
-    }
-
-    &--lead {
-      width: 380px;
     }
   }
 
