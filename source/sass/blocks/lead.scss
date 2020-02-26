@@ -170,6 +170,13 @@
   transform: rotate(-90deg);
   left: 12%;
   bottom: 150px;
+  transition: 150ms;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
 
 
   @media (max-width: $desktop-width) {

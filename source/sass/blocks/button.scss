@@ -9,13 +9,18 @@
   cursor: pointer;
 
   &--callback {
-    width: 180px;
+    display: inline-block;
+    vertical-align: top;
     font-size: $fontsize-smaller;
     line-height: 16px;
     font-weight: $fontweight-bold;
     border: 1px solid $color-white;
     color: $color-white;
     background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding-right: 26px;
+    padding-left: 26px;
   }
 
   &--lead {
@@ -82,27 +87,37 @@
   @media (min-width: $desktop-width) {
     transition: 150ms;
 
-    &--callback:hover {
+    &--callback:hover,
+    &--callback:focus,
+    &--callback:active {
       background-color: $color-white;
       color: $color-teal;
     }
 
-    &--lead:hover {
+    &--lead:hover,
+    &--lead:focus,
+    &--lead:active {
       background-color: $color-white;
       color: $color-skyblue;
     }
 
-    &--about:hover {
+    &--about:hover,
+    &--about:focus,
+    &--about:active {
       background-color: $color-skyblue;
       color: $color-white;
     }
 
-    &--feedback:hover {
+    &--feedback:hover,
+    &--feedback:focus,
+    &--feedback:active {
       background-color: $color-white;
       color: $color-skyblue;
     }
 
-    &--popup:hover {
+    &--popup:hover,
+    &--popup:focus,
+    &--popup:active {
       background-color: $color-white;
       color: $color-skyblue;
     }

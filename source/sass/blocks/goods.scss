@@ -135,7 +135,9 @@
 
 // Взаимодействие
 
-.goods__item:hover .goods__image-wrapper::before {
+.goods__link:hover .goods__image-wrapper::before,
+.goods__link:active .goods__image-wrapper::before,
+.goods__link:focus .goods__image-wrapper::before {
   @media (min-width: $desktop-width) {
     transition: 150ms;
     background-color: $color-white;

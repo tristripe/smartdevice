@@ -60,24 +60,28 @@
     background-image: url("../img/stopwatch.png");
     width: 30px;
     height: 35px;
+    background-size: 30px 35px;
   }
 
   &--hired::before {
     background-image: url("../img/hired.png");
     width: 32px;
     height: 33px;
+    background-size: 32px 33px;
   }
 
   &--detective::before {
     background-image: url("../img/detective.png");
     width: 31px;
     height: 27px;
+    background-size: 31px 27px;
   }
 
   &--tag::before {
     background-image: url("../img/tag.png");
     width: 33px;
     height: 33px;
+    background-size: 33px 33px;
   }
 }
 

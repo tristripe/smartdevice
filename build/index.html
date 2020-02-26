@@ -36,7 +36,7 @@
           </a>
         </li>
       </ul>
-      <button class="button button-position button--callback" type="button">Заказать звонок</button>
+      <a href="#" class="button button-position button--callback">Заказать звонок</a>
     </div>
   </header>
   <main>
@@ -165,9 +165,12 @@
         <form class="feedback__form" action="#" method="POST">
           <h2 class="feedback__title feedback__title-position">Остались вопросы? Задайте их нам!</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position">Мы проконсультируем Вас бесплатно</h3>
-          <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name">
+          <label for="feedback-name" class="visually-hidden">Ваше имя</label>
+          <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name" id="feedback-name">
+          <label for="feedback-phone" class="visually-hidden">Ваш телефон</label>
           <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone" id="feedback-phone">
-          <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
+          <label for="feedback-question" class="visually-hidden">Задать вопрос</label>
+          <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос" id="feedback-question"></textarea>
           <button class="button button-position button--feedback button-position--feedback" type="submit">Задать вопрос</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
           <label for="agree" class="feedback__label feedback__label-position">Я согласен на обработку персональных данных</label>
@@ -235,17 +238,20 @@
     </div>
   </footer>
 
-  <div class="popup hidden">
+  <div class="popup hidden" id="popup">
     <section class="feedback feedback-position feedback--popup feedback-position--popup">
       <div class="feedback__wrapper feedback__wrapper-position feedback__wrapper--popup">
         <button class="feedback__close feedback__close-position" aria-label="Закрыть форму без сохранения" type="button">
           <img src="img/cross.png" alt="Закрыть форму без сохранения" width="17" height="17">
         </button>
-        <form class="feedback__form feedback__form--popup" action="#" method="POST">
+        <form action="#" method="POST">
           <h2 class="feedback__title feedback__title-position feedback__title-position--popup">Закажите звонок</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position feedback__subtitle-position--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
+          <label for="popup-name" class="visually-hidden">Ваше имя</label>
           <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="text" placeholder="Имя" name="name" id="popup-name">
+          <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
           <input class="feedback__input feedback__input-position feedback__input--popup feedback__input-position--popup" type="tel" placeholder="Телефон" name="popup-phone" id="popup-phone">
+          <label for="popup-text" class="visually-hidden">Ваш вопрос</label>
           <textarea class="feedback__textarea feedback__textarea-position feedback__textarea-position--popup" name="question" rows="8" cols="80" placeholder="Ваш вопрос" id="popup-text"></textarea>
           <button class="button button-position button-position--popup button--popup button--feedback" type="submit">Отправить</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree--popup">

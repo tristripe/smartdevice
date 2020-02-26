@@ -25,6 +25,10 @@
   }
 }
 
+.feedback__wrapper.feedback__wrapper--popup form {
+  width: 100%;
+}
+
 .feedback-position {
   &--popup {
     margin-right: auto;
@@ -87,11 +91,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  &--popup {
-    flex-basis: 100%;
-    width: 100%;
-  }
 
   @media (max-width: $desktop-width) {
     width: 100%;
@@ -165,9 +164,18 @@
     padding-left: 45px;
   }
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: $tablet-width) {
     flex-basis: 100%;
   }
+}
+
+.feedback__checkbox:focus + .feedback__label,
+.feedback__checkbox:active + .feedback__label {
+  text-decoration: underline;
 }
 
 .feedback__label-position {
