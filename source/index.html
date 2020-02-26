@@ -12,9 +12,9 @@
     <div class="header__wrapper">
       <a class="logo logo-position">
         <picture>
-          <source type="image/webp" media="(min-width: 767px)" srcset="img/logo-tablet.webp">
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo-desktop.webp">
-          <source media="(max-width: 767px)" srcset="img/logo-tablet.png">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-desktop.webp">
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
           <img class="logo__image" src="img/logo-desktop.png" alt="Производство и монтаж электронных комплектующих - Smart Device" width="202" height="52">
         </picture>
       </a>
@@ -28,7 +28,7 @@
           </a>
         </li>
         <li class="service__item">
-          <a href="#" class="service__link service__link--phone">
+          <a href="tel:+4950005252" class="service__link service__link--phone">
             <span class="visually-hidden">
               Получить обратный звонок
             </span>
@@ -167,7 +167,7 @@
           <h3 class="feedback__subtitle feedback__subtitle-position">Мы проконсультируем Вас бесплатно</h3>
           <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name">
           <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone" id="feedback-phone">
-          <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос" value="+7"></textarea>
+          <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
           <button class="button button-position button--feedback button-position--feedback" type="submit">Задать вопрос</button>
           <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
           <label for="agree" class="feedback__label feedback__label-position">Я согласен на обработку персональных данных</label>
@@ -188,17 +188,17 @@
         <ul class="social social-position">
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Перейти на нашу страницу в Фейсбуке">
-              <img src="img/fb.png" alt="Мы в Фейсбуке">
+              <img src="img/fb.png" alt="Мы в Фейсбуке" width="27" height="27">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Посетить группу в Одноклассниках">
-              <img src="img/ok.png" alt="Наша группа в Одноклассниках">
+              <img src="img/ok.png" alt="Наша группа в Одноклассниках" width="27" height="27">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Зайти в наше сообщество Вконтакте">
-              <img src="img/vk.png" alt="Сообщество Вконтакте">
+              <img src="img/vk.png" alt="Сообщество Вконтакте" width="27" height="27">
             </a>
           </li>
         </ul>
@@ -238,7 +238,7 @@
   <div class="popup hidden">
     <section class="feedback feedback-position feedback--popup feedback-position--popup">
       <div class="feedback__wrapper feedback__wrapper-position feedback__wrapper--popup">
-        <button class="feedback__close feedback__close-position" aria-label="Закрыть форму без сохранения">
+        <button class="feedback__close feedback__close-position" aria-label="Закрыть форму без сохранения" type="button">
           <img src="img/cross.png" alt="Закрыть форму без сохранения" width="17" height="17">
         </button>
         <form class="feedback__form feedback__form--popup" action="#" method="POST">
