@@ -157,6 +157,7 @@
   opacity: 0.8;
   padding-left: 27px;
   cursor: pointer;
+  transition: 150ms;
 
 
   &--popup {
@@ -165,7 +166,7 @@
   }
 
   &:hover {
-    text-decoration: underline;
+    opacity: 1;
   }
 
   @media (max-width: $tablet-width) {
@@ -175,7 +176,7 @@
 
 .feedback__checkbox:focus + .feedback__label,
 .feedback__checkbox:active + .feedback__label {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 .feedback__label-position {

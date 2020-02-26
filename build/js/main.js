@@ -1,18 +1,21 @@
 'use strict';
 
+var ESC = 27;
+
 var callbackButton = document.querySelector('.button--callback');
 var popupCallback = document.querySelector('.popup');
 var popupCloseHandler = document.querySelector('.feedback__close');
 var feedbackPhone = document.querySelector('input[name="phone"]');
 var popupPhone = document.querySelector('input[name="popup-phone"]');
 var feedbackPopup = document.querySelector('.feedback__wrapper.feedback__wrapper--popup');
+var body = document.querySelector('body');
 
 var nameValue = document.querySelector('#popup-name');
 var phoneValue = document.querySelector('#popup-phone');
 var textValue = document.querySelector('#popup-text');
 
 var isEscEvent = function (evt, action) {
-  if (evt.keyCode === 27) {
+  if (evt.keyCode === ESC) {
     action();
   }
 };
@@ -37,7 +40,7 @@ var closePopup = function () {
 
 var outsideClickHandler = function (event) {
   if (!feedbackPopup.contains(event.target)) {
-    closePopup();
+    closeCallback();
   }
 };
 
@@ -47,6 +50,7 @@ var openCallback = function () {
   popupCallback.addEventListener('click', outsideClickHandler);
   popupCloseHandler.addEventListener('click', closePopup);
   document.addEventListener('keydown', pressEscHandler);
+  body.classList.add('scroll-hidden');
 };
 
 var closeCallback = function () {
@@ -55,6 +59,7 @@ var closeCallback = function () {
   popupCallback.removeEventListener('click', outsideClickHandler);
   popupCloseHandler.removeEventListener('click', closePopup);
   document.removeEventListener('keydown', pressEscHandler);
+  body.classList.remove('scroll-hidden');
 };
 callbackButton.addEventListener('click', openCallback);
 
