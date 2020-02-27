@@ -25,3 +25,13 @@
     margin-bottom: 34px;
   }
 }
+
+.social__link img {
+  transition: 150ms;
+  border-radius: 50%;
+  @media (min-width: $desktop-width) {
+    &:hover {
+      border: 1px solid $color-skyblue;
+    }
+  }
+}
