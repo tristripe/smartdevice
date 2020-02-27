@@ -65,7 +65,7 @@
         </div>
         <a class="button button--lead button-position button-position--lead" href="#feedback">
           <span class="button__text button__text--mobile">Бесплатная консультация</span>
-          <span class="button__text button__text--tablet">Заказать бесплатную консультацию</span>
+          <span class="button__text button__text--tablet">Получить бесплатную консультацию</span>
         </a>
         <a href="#advantage" class="lead__anchor">Скролл вниз</a>
       </div>
@@ -76,22 +76,22 @@
         <ul class="advantage__list">
           <li class="advantage__item advantage__item--stopwatch advantage__item-position">
             <span class="advantage__icon advantage__icon--stopwatch"></span>
-            <h3 class="advantage__title">Оперативные сроки</h3>
+            <h3 class="advantage__title advantage__title-position">Оперативные сроки</h3>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
           <li class="advantage__item advantage__item--hired advantage__item-position">
             <span class="advantage__icon advantage__icon--hired"></span>
-            <h3 class="advantage__title">Крупные поставщики</h3>
+            <h3 class="advantage__title advantage__title-position">Крупные поставщики</h3>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantage__item advantage__item--detective advantage__item-position">
             <span class="advantage__icon advantage__icon--detective"></span>
-            <h3 class="advantage__title">Полная конфиденциальность</h3>
+            <h3 class="advantage__title advantage__title-position">Полная конфиденциальность</h3>
             <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="advantage__item advantage__item--tag advantage__item-position">
             <span class="advantage__icon advantage__icon--tag"></span>
-            <h3 class="advantage__title">Персонализация стоимости</h3>
+            <h3 class="advantage__title advantage__title-position">Персонализация стоимости</h3>
             <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
           </li>
         </ul>
@@ -102,11 +102,11 @@
         <div class="about__image-wrapper about__image-wrapper-position">
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/year-tablet.webp">
-            <img src="img/year-tablet.png" alt="предоставляем мировые технологии с 1997 года" width="244" height="362">
+            <img src="img/year-tablet.png" alt="предоставляем мировые технологии с 1997 года" width="159" height="362">
           </picture>
         </div>
         <div class="about__content-wrapper">
-          <h2 class="about__title">О компании</h2>
+          <h2 class="about__title about__title-position">О компании</h2>
           <div class="about__text-wrapper">
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
               Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
@@ -183,13 +183,13 @@
           <h2 class="feedback__title feedback__title-position">Остались вопросы? Задайте их нам!</h2>
           <h3 class="feedback__subtitle feedback__subtitle-position">Мы проконсультируем Вас бесплатно</h3>
           <label for="feedback-name" class="visually-hidden">Ваше имя</label>
-          <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name" id="feedback-name">
+          <input class="feedback__input feedback__input-position" type="text" placeholder="Имя" name="name" id="feedback-name" required="">
           <label for="feedback-phone" class="visually-hidden">Ваш телефон</label>
-          <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone" id="feedback-phone">
+          <input class="feedback__input feedback__input-position" type="text" placeholder="Телефон" name="phone" id="feedback-phone" required="">
           <label for="feedback-question" class="visually-hidden">Задать вопрос</label>
-          <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="8" cols="80" placeholder="Ваш вопрос" id="feedback-question"></textarea>
+          <textarea class="feedback__textarea feedback__textarea-position" name="question" rows="6" cols="80" placeholder="Ваш вопрос" id="feedback-question" required=""></textarea>
           <button class="button button-position button--feedback button-position--feedback" type="submit">Задать вопрос</button>
-          <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree">
+          <input class="visually-hidden feedback__checkbox" type="checkbox" id="agree" required="">
           <label for="agree" class="feedback__label feedback__label-position">Я согласен на обработку персональных данных</label>
         </form>
       </div>
@@ -204,7 +204,7 @@
             <img src="img/logo-footer.png" alt="Производство и монтаж электронных комплектующих - Smart Device" width="216" height="52">
           </picture>
         </a>
-        <p class="footer__developer footer__developer--logo">1999-2018 SD Service Devices</p>
+        <p class="rights__developer rights__developer--logo">1999-2018 SD Service Devices</p>
         <ul class="social social-position">
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Перейти на нашу страницу в Фейсбуке">
@@ -246,11 +246,13 @@
           <li class="footer__item"><a href="tel:+792692608079" class="footer__link">+7 (926) 926-080-79</a></li>
         </ul>
       </div>
-      <div class="footer__rights footer__rights-position">
-        <p class="footer__developer footer__developer--reserved">Все права защищены</p>
-        <p class="footer__developer footer__developer--dates">1999-2018 SD Service Devices</p>
-        <p class="footer__developer">Условия конфиденциальности</p>
-        <p class="footer__developer footer__developer--trademark">Developed by wow studio</p>
+    </div>
+    <div class="rights rights-position">
+      <div class="rights__wrapper">
+        <p class="rights__developer rights__developer--reserved">Все права защищены</p>
+        <p class="rights__developer rights__developer--dates">1999-2018 SD Service Devices</p>
+        <p class="rights__developer">Условия конфиденциальности</p>
+        <p class="rights__developer rights__developer--trademark">Developed by wow studio</p>
       </div>
     </div>
   </footer>

@@ -31,11 +31,14 @@
     background-image: url("../img/envelope.png");
     margin-right: 23px;
     background-position: left center;
+    background-size: 26px 19px;
+    width: 200px;
   }
 
   &--phone {
     background-image: url("../img/phone-call.png");
     background-position: left center;
+    background-size: 25px 24px;
   }
 
   @media (max-width: $desktop-width) {

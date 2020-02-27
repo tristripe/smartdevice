@@ -1,6 +1,6 @@
 .lead {
   padding-top: 250px;
-  padding-bottom: 290px;
+  padding-bottom: 273px;
   background-color: $color-teal;
   background-image: url("../img/lead-bg.png");
   background-size: cover;
@@ -32,8 +32,8 @@
 
 .lead__image-wrapper {
   position: absolute;
-  right: 9%;
-  top: 255px;
+  right: 8.5%;
+  top: 260px;
   z-index: 0;
 
   @media (max-width: $desktop-width) {
@@ -67,6 +67,7 @@
 
   @media (min-width: $desktopwide-width) {
     width: 1400px;
+    padding-left: 0;
   }
 }
 
@@ -92,6 +93,10 @@
     line-height: 47px;
     width: 270px;
   }
+
+  @media (min-width: $desktopwide-width) {
+    padding-top: 10px;
+  }
 }
 
 .lead__title-position {
@@ -104,7 +109,8 @@
     margin-left: 64px;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktopwide-width) {
+    margin-bottom: 0px;
     margin-left: 0;
   }
 }
@@ -112,24 +118,24 @@
 .lead__subtitle {
   position: relative;
   font-family: $ptmono;
-  font-size: $fontsize-higher;
+  font-size: $fontsize-bigger;
   line-height: 34px;
   z-index: 1;
 
   color: $color-white;
   line-height: 1.7em;
   padding-left: 48px;
-  width: 550px;
+  width: 660px;
 
   &::before {
     display: block;
     position: absolute;
     content: "";
     height: 2px;
-    width: 33px;
+    width: 63px;
     background-color: $color-white;
-    top: 16px;
-    left: 0;
+    top: 19px;
+    left: -40px;
   }
 
   @media (max-width: $desktop-width) {
@@ -145,8 +151,9 @@
 }
 
 .lead__subtitle-position {
-  margin-bottom: 42px;
-  margin-left: 0;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  margin-left: 45px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 52px;
@@ -157,6 +164,7 @@
     margin-bottom: 32px;
     margin-left: 0;
   }
+
 }
 
 .lead__anchor {
@@ -168,8 +176,8 @@
   opacity: 0.5;
   position: absolute;
   transform: rotate(-90deg);
-  left: 12%;
-  bottom: 150px;
+  left: 11.3%;
+  bottom: 143px;
   transition: 150ms;
 
   &:hover,

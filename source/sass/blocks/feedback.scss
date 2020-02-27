@@ -1,11 +1,11 @@
 .feedback {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 113px;
   background-color: $color-skyblue;
   background-image: url("../img/plane-bg.png");
   background-repeat: no-repeat;
   background-size: 602px 477px;
-  background-position: 13% 90px;
+  background-position: 15% 95px;
 
   &--popup {
     padding-top: 0;
@@ -63,7 +63,7 @@
   @media (min-width: $desktopwide-width) {
     width: 1200px;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 10px;
 
     &--popup {
       width: 490px;
@@ -87,10 +87,11 @@
 }
 
 .feedback__wrapper form {
-  width: 47%;
+  width: 48%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 
   @media (max-width: $desktop-width) {
     width: 100%;
@@ -117,7 +118,7 @@
 }
 
 .feedback__title-position {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
   &--popup {
     margin-bottom: 0;
@@ -134,7 +135,9 @@
 }
 
 .feedback__subtitle-position {
-  margin-bottom: 45px;
+  margin-top: 13px;
+  margin-bottom: 50px;
+  margin-left: 5px;
 
   &--popup {
     margin-bottom: 30px;
@@ -181,7 +184,7 @@
 
 .feedback__label-position {
   position: relative;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .feedback__label::before {
@@ -189,10 +192,11 @@
   width: 16px;
   height: 16px;
   content: "";
-  left: 0;
+  left: -1px;
   background-image: url("../img/checkbox.png");
   background-repeat: no-repeat;
   background-position: center center;
+  top: 5px;
 }
 
 .feedback__checkbox:checked + .feedback__label::before {
@@ -201,9 +205,9 @@
 
 .feedback__input,
 .feedback__textarea {
-  padding-top: 14px;
-  padding-bottom: 16px;
-  padding-left: 17px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  padding-left: 20px;
   font-family: $ptmono;
   font-weight: $fontweight-normal;
   font-size: $fontsize-standart;
@@ -245,6 +249,8 @@
 }
 
 .feedback__textarea {
+  padding-top: 10px;
+  padding-bottom: 10px;
   resize: none;
   width: 100%;
 

@@ -1,6 +1,6 @@
 .footer {
   padding-top: 65px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 
   @media (max-width: $desktop-width) {
     padding-top: 15px;
@@ -18,7 +18,9 @@
   justify-content: space-between;
 
   @media (min-width: $desktopwide-width) {
-    width: 1400px;
+    width: 1420px;
+    padding-right: 0;
+    padding-left: 10px;
     justify-content: flex-start;
   }
 }
@@ -44,32 +46,13 @@
 
 .footer__links-position {
   @media (min-width: $desktopwide-width) {
-    margin-right: 14%;
-  }
-}
-
-.footer__rights {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  border-top: 1px solid $color-lightestgray;
-
-  @media (max-width: $tablet-width) {
-    border: none;
-  }
-}
-
-.footer__rights-position {
-  margin-top: 10px;
-
-  @media (max-width: $desktop-width) {
-    margin-top: 0;
+    margin-right: 14.5%;
   }
 }
 
 .footer__list {
   list-style: none;
+  padding-top: 9px;
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +75,10 @@
     display: none;
     padding-bottom: 10px;
   }
+}
+
+.footer__list.footer__list--links li a {
+  margin-right: 60px;
 }
 
 .footer__address,
@@ -174,6 +161,7 @@
   font-family: $roboto;
   font-size: $fontsize-medium;
   line-height: 16px;
+  letter-spacing: 0.05em;
   font-weight: $fontweight-normal;
   text-transform: uppercase;
   color: $color-deepdark;
@@ -186,47 +174,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
-}
-
-.footer__developer {
-  font-family: $ptmono;
-  font-size: $fontsize-smallest;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: $color-deepdark;
-  opacity: 0.5;
-
-  &--logo {
-    display: none;
-  }
-
-  @media (min-width: $desktopwide-width) {
-    &--reserved {
-      margin-right: 100px;
-    }
-
-    &--dates {
-      margin-right: 140px;
-    }
-
-    &--trademark {
-      margin-left: auto;
-    }
-  }
-
-  @media (max-width: $desktop-width) {
-    &--reserved {
-      display: none;
-    }
-
-    &--dates {
-      display: none;
-    }
-
-    &--logo {
-      display: block;
-    }
   }
 }
 
