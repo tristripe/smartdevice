@@ -53,6 +53,9 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    padding-top: 53px;
+    padding-bottom: 10px;
+    padding-left: 4px;
   }
 
   @media (min-width: $desktopwide-width) {
@@ -113,6 +116,11 @@
   @media (max-width: $desktop-width) {
     top: 27px;
     left: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 25px;
+    left: 22px;
   }
 }
 

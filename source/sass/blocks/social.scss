@@ -8,6 +8,10 @@
   margin-right: 15px;
 }
 
+.social__item:last-child {
+  margin-right: 0;
+}
+
 .social-position {
   margin-bottom: 60px;
 
@@ -17,7 +21,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 18px;
+    margin-bottom: 34px;
   }
 }

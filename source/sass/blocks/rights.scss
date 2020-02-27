@@ -12,6 +12,7 @@
 .rights__wrapper {
   @include wrapper;
   display: flex;
+  width: 100%;
   justify-content: space-between;
 
   @media (min-width: $desktopwide-width) {
@@ -23,6 +24,11 @@
   @media (max-width: $desktop-width) {
     padding-top: 5px;
     width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -66,5 +72,10 @@
       display: block;
       letter-spacing: 0.04em;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 22px;
+    margin-bottom: 0;
   }
 }

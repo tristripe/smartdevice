@@ -23,7 +23,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 5px;
-    padding-bottom: 25px;
+    padding-bottom: 58px;
   }
 }
 
@@ -129,6 +129,10 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 5px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .feedback__subtitle {
@@ -155,6 +159,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 25px;
+    margin-left: 0;
   }
 }
 
@@ -207,6 +212,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   top: 5px;
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .feedback__checkbox:checked + .feedback__label::before {
@@ -267,6 +276,11 @@
   @media (max-width: $desktop-width) {
     flex-basis: auto;
     padding-bottom: 18px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 12px;
+    height: 105px;
   }
 }
 

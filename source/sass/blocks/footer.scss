@@ -111,11 +111,19 @@
   @media (max-width: $desktop-width) {
     margin-right: 37px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .footer__mapping-position {
   @media (max-width: $desktop-width) {
     margin-left: 27px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 
@@ -139,7 +147,8 @@
     content: "+";
     display: block;
     font-family: $ptmono;
-    font-size: 20px;
+    font-size: $fontsize-large;
+    opacity: 0.7;
     padding-right: 10px;
     color: $color-gray;
   }
@@ -183,8 +192,9 @@
 
 
   @media (max-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -205,6 +215,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
   }
 }
