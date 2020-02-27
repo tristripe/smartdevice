@@ -90,6 +90,11 @@
 
 .goods__image-wrapper {
   position: relative;
+  max-width: 378px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .goods__image-wrapper::before {
