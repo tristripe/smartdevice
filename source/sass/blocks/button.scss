@@ -69,8 +69,20 @@
   }
 
   @media (max-width: $desktop-width) {
+    &--lead {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
     &--callback {
       display: none;
+    }
+
+    &--feedback {
+      width: auto;
+      padding-right: 85px;
+      padding-left: 85px;
+
     }
   }
 

@@ -2,6 +2,7 @@
   padding-bottom: 0px;
 
   @media (max-width: $desktop-width) {
+    padding-top: 15px;
     padding-bottom: 20px;
   }
 
@@ -17,6 +18,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (max-width: $desktop-width) {
+    padding-left: 0;
+  }
+
   @media (max-width: $tablet-width) {
     background-image: none;
     padding-bottom: 0;
@@ -28,7 +33,7 @@
   width: 17.5%;
 
   @media (max-width: $desktop-width) {
-    width: 30%;
+    width: 28%;
   }
 
   @media (max-width: $tablet-width) {
@@ -76,6 +81,11 @@
 
 .about__title-position {
   margin-bottom: 20px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 7px;
+    margin-bottom: 25px;
+  }
 }
 
 .about__wrapper p {
@@ -88,6 +98,10 @@
 
 .about__text-wrapper {
   margin-bottom: 40px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .about__text-wrapper p:last-child {

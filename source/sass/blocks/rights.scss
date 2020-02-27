@@ -14,10 +14,15 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktopwide-width) {
     width: 1400px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-top: 5px;
+    width: 100%;
   }
 }
 
@@ -25,6 +30,7 @@
   font-family: $ptmono;
   font-size: $fontsize-smallest;
   line-height: 24px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-deepdark;
   opacity: 0.5;
@@ -58,6 +64,7 @@
 
     &--logo {
       display: block;
+      letter-spacing: 0.04em;
     }
   }
 }
