@@ -8,16 +8,16 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2"),
-  url("../fonts/RobotoCondensed-regular.woff") format("woff");
+  src: url("../fonts/Robotocondensed-regular.woff2") format("woff2"),
+  url("../fonts/Robotocondensed-regular.woff") format("woff");
   font-weight: $fontweight-normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-bold.woff2") format("woff2"),
-  url("../fonts/RobotoCondensed-bold.woff2") format("woff2");
+  src: url("../fonts/Robotocondensed-bold.woff2") format("woff2"),
+  url("../fonts/Robotocondensed-bold.woff2") format("woff2");
   font-weight: $fontweight-bold;
   font-display: swap;
 }
