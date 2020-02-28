@@ -97,6 +97,10 @@
   }
 }
 
+.goods__link {
+  text-decoration: none;
+}
+
 .goods__image-wrapper::before {
   position: absolute;
   content: ">";
