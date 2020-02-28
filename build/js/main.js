@@ -10,7 +10,6 @@
   var popupPhone = document.querySelector('input[name="popup-phone"]');
   var feedbackPopup = document.querySelector('.feedback__wrapper.feedback__wrapper--popup');
   var body = document.querySelector('body');
-
   var nameValue = document.querySelector('#popup-name');
   var phoneValue = document.querySelector('#popup-phone');
   var textValue = document.querySelector('#popup-text');
