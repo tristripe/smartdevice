@@ -1129,10 +1129,13 @@ img {
 
 .goods__image-wrapper {
   position: relative;
-  max-width: 378px; }
+  max-width: 370px; }
   @media (max-width: 1023px) {
     .goods__image-wrapper {
       max-width: 100%; } }
+
+.goods__link {
+  text-decoration: none; }
 
 .goods__image-wrapper::before {
   position: absolute;
@@ -1148,7 +1151,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 8px;
+  right: 0;
   bottom: 4px; }
   @media (max-width: 1023px) {
     .goods__image-wrapper::before {
